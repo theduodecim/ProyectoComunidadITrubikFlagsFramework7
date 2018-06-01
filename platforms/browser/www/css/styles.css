@@ -64,14 +64,14 @@ div[class*="col"] {
   align-content: center;    
   top: 60vw;
   left: 10vw;
-  right: 20vw;
-  width: 40vw;
+  right: 5vw;
+  width: 30vw;
   border-style: dotted;
   background: #fff;
   text-align: center;
   color: #000;
   border: 1px solid #ddd;
-  padding: 5px;
+  padding: 4px;
   margin-bottom: 15px;
   font-size: 12px;
   padding-left: 5%;
@@ -81,8 +81,7 @@ div[class*="col"] {
   position: relative;
   align-content: center;    
   top: 62vw;
-  left: 2vw;
-  right: 50vw;
+  left: 5vw;
   width: 40vw;
   border-style: dotted;
   background: #fff;
@@ -99,6 +98,8 @@ div[class*="col"] {
    height: 25px;
    border-radius: 100%;
 }
+
+
 
 .checkFlag {
   position: relative;
@@ -121,4 +122,49 @@ div[class*="col"] {
 .page-content {
   background-image: url("http://i64.tinypic.com/eg67f8.jpg");
    background-size: cover !important;
+}
+
+/* page2 */
+.flagsColorspage2 {
+  position: relative;
+  align-content: center;    
+  top: 10vw;
+  left: 6vw;
+  right: 50vw;
+  width: 80vw;
+  border-style: dotted;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.flagbuttonpage2 {
+   width: 60px;
+   height: 55px;
+   border-radius: 100%;
+}
+
+.flagdescription {
+  position: relative;
+  top: 25vw;
+  left: 10vw;
+  right: 20vw;
+  border-style: dotted;
+  background: #fff;
+  text-align: center;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 10px;
+  padding-left: 5%;
+   word-break:break-all;
+}
+
+.flagimg {
+  height: 30px;
+  width: 50px;
 }
