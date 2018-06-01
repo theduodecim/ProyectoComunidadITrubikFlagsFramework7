@@ -1,0 +1,147 @@
+.rubixbox{
+  /*  position: relative;
+    left: 15%;
+    right: 15%;
+    border-style: double;
+    width: 15%;*/
+}
+
+/*#rubixBox {
+    border-style: double;
+    position: relative;
+    background-color: green;
+    width: 145px;
+    height: 145px;
+}*/
+@keyframes hovercolors {
+    from {background-color: #1a00ff; border-color: #1a00ff;}
+    to {background-color: #e2090a; border-color: #e2090a;}
+    to {background-color: #00ff03; border-color: #44ff1c;}
+    to {background-color: #ffffff; border-color: #ffffff;}
+    to {background-color: #ff5c0a; border-color: #ff5c0a;}
+    to {background-color: #feff0d; border-color: #feff0d;}
+    }
+
+#button1 {
+   width: 30px;
+   height: 30px;
+}
+#button1:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+#button2 {
+    width: 30px;
+    height: 30px;
+}
+#button2:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+#button3 {
+    width: 30px;
+    height: 30px;
+}
+
+#button3:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+#button4 {
+    width: 30px;
+    height: 30px;
+}
+#button4:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+#button5 {
+    width: 30px;
+    height: 30px;
+}
+#button5:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+#button6 {
+    width: 30px;
+    height: 30px;
+}
+#button6:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+#button7 {
+    width: 30px;
+    height: 30px;
+}
+#button7:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+#button8 {
+    width: 30px;
+    height: 30px;
+}
+#button8:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+#button9 {
+    width: 30px;
+    height: 30px;
+}
+
+#button9:hover {
+    -webkit-animation-name: hovercolors;
+    -webkit-animation-duration: 2s;
+    animation-name: hovercolors;
+    animation-duration: 2s;
+    cursor: pointer;
+}
+
+
+.flagcolors {
+    position: relative;
+    left: 30%;
+    right: 35%;
+    border-style: double;
+    width: 50%;
+}
+
+.flagsoutcome {
+    position: relative;
+    left: 30%;
+    right: 35%;
+    border-style: double;
+    width: 50%;
+}
+
+
+
