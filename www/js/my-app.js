@@ -5,6 +5,35 @@ var myApp = new Framework7();
 // If we need to use custom DOM library, let's save it to $$ variable:
 var $$ = Dom7;
 
+
+// VARIABLES GLOBALES
+var flagName = "";
+var flagsConvinations = ["rgb", "rgo", "rgw", "rgy" , "rbw", "rbo", "gbw", "row", "bow", "gow",
+ "rgy", "rby", "gby", "ory", "ogy", "oby", "wry", "wgy", "wby", "owy"];
+var flagsRgb = [
+    
+    
+    
+    ];
+var flagsRgo = [];
+var flagsRgw = [];
+var flagsRgy = [];
+var flagsRbw = [];
+var flagsRbo = [];
+var flagsGbw = [];
+var flagsRow = [];
+var flagsBow = [];
+var flagsGow = [];
+var flagsRgy = [];
+var flagsRby = [];
+var flagsGby = [];
+var flagsOry = [];
+var flagsOgy = [];
+var flagsOby = [];
+var flagsWry = [];
+var flagsWgy = [];
+var flagsWby = [];
+var flagsowy = [];
 // Add view
 var mainView = myApp.addView('.view-main', {
     // Because we want to use dynamic navbar, we need to enable it for this view:
@@ -13,6 +42,14 @@ var mainView = myApp.addView('.view-main', {
 
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
+  $$("RubikTheflag").on("click", function() {
+    
+    
+    
+    
+    
+    
+  })
   
 });
 
@@ -32,7 +69,13 @@ $$(document).on('pageInit', function (e) {
 
   if (page.name === 'page2') {
         // Following code will be executed for page with data-page attribute equal to "about"
-        myApp.alert('Here comes page2 page');
+       
+        
+        
+        
+        
+        
+        
     }
 
  /*   if (page.name === 'about') {
