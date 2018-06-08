@@ -11,8 +11,6 @@ var myApp = new Framework7();
 /*var paper = paper;*/
 var $$ = Dom7;
 
-
-
  
 
 
@@ -250,7 +248,6 @@ $$(document).on('deviceready', function() {
                                             flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/1/15/Flag_of_Akiruno%2C_Tokyo.svg");
                                             console.log(flagDescription);
                                         break; 
-                                        
                                          case 3:
                                             console.log("rgbflag1");
                                             flagName = $$("#flagname").text("Cukarica");
@@ -318,12 +315,40 @@ $$(document).on('deviceready', function() {
                                         break; 
                                            }
                                 }
-                          
              break;
-             
     };
     
     
+   
+   /*var left = $$('.RubikTheflag').offset().left;*/ // Get the calculated left position
+    var right = $$('.RubikTheflag').transform('rotate(90deg)');
+ /* console.log(right);*/
+ function randomcubecolors() {
+         var randomConvination = Math.floor((Math.random() * 3) + 1)
+         console.log("random RGWflagWorking");
+         return randomConvination;
+      }
+ 
+ switch (randomcubecolors()) {
+     case 1:
+        $$(".RubikTheflag").css("background-color", "red");
+  $$("#button1").css("background-color", "blue");
+  $$('.cube').transform('rotate(180deg)');
+      break;
+       case 2:
+        $$(".RubikTheflag").css("background-color", "green");
+  $$("#button1").css("background-color", "yellow");
+  $$('.cube').transform('rotate(90deg)');
+         break;
+     case 3:
+        $$(".RubikTheflag").css("background-color", "yellow");
+  $$("#button1").css("background-color", "blue");
+  $$('.cube').transform('rotate(-90deg)');
+         break;
+ }
+
+   
+  
     
   })
   /* if(flagName == null) {*/
@@ -428,11 +453,6 @@ $$(document).on('pageInit', function (e) {
 		// Get a reference to the canvas object
 	
 
-    
-    
-    
-    
-    
     
     
     }
