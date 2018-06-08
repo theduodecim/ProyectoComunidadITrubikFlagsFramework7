@@ -47,12 +47,12 @@
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
           <div class="burgernav">
-           <h1> News </h1>
-           <h5>Which place of the world you are going visit today?</h5>
-           <p>If you donate more than 5 US$,
-           you can ask us us to update the database with
-           5 of your favorite flags, if they are not yet in the database.
-           After the donation, send the list of chosen flags to rubiksflags@gmail.com</p>
+           <h1 id="leftpanelnews"> Noticias </h1>
+           <h5 id="leftpanelquote">¿Que lugar del mundo te gustaría visitar Hoy?</h5>
+           <p  id="leftpanelinformation">Si donas 5 US$ o mas,
+           puedes sugerirnos agregar cinco nuevas banderas a nuestra base de datos 
+           si no se encuentran en nuestra App. Luego de la donación,
+           envia una lista de tus banderas a rubiksflags@gmail.com y agregaremos tus banderas preferidas!</p>
            <p align="bottom"> Made By DuDeDa </p>
            <a align="bottom" href="https://www.patreon.com/bePatron?c=1798557">Donation Link</a>
            </div>
@@ -74,7 +74,10 @@
                         -->
                         <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
                         <div>Rubik's Cube Flags</div>
-                    
+                       
+                    </div>
+                     <div class="right">
+                        <input type="button" id="ENG" value="Lenguaje a Ingles">
                     </div>
                 </div>
             </div>
@@ -88,11 +91,10 @@
                            <div class="row no-gutter">
                                <div class="col-80">
                                   <div align="center" class="tutorial">
-                                   <h1>Welcome</h1> 
-                                    <h4>It's time to explore the world with Rubik's Cube Flags</h4> 
-                                     <h5> First Press the Cube and Get the your colors of the day! </h5> 
-                                      <p>Seccond, Now you got the colors press the Explore</p> 
-                                       <p>to know more about your new Flag!</p> 
+                                   <h1 id="tutorialWelcome">Bienvenidos</h1> 
+                                    <h4 id="tutorialQuote">Es Hora de explorar el mundo con Rubiks's Cube Flags!</h4> 
+                                     <h5 id="tutorialInstruction"> Primero Preciona el cubo y obtendras tus colores y banderas del Dia! Luego preciona Explore! para investigar! y conocer! mas sobre esta bandera!
+                                       </h5> 
                                  </div>
                                </div>
                                
@@ -121,10 +123,10 @@
                                 <div class="row no-gutter">
                                 <div id="buttonexplorehere" class="col-25">
                                    
-                               <button class="checkFlag" id="checkflagbutton"><a id="checkflagText" align="center" href="page2.html" >Explore <p id="flagname"></p> </a></button><br> 
+                               <button class="checkFlag" id="checkflagbutton"><a id="checkflagText" align="center" href="page2.html">Explore<p id="flagname"></p></a></button> 
                             
                             <!-- Link to another page -->
-                          <!--  <a href="about.html">About app</a>-->
+                        <!-- <a href="paperbackground.html">Paper</a>-->
                         </div>
                     </div>
                 </div>
@@ -133,12 +135,9 @@
         
         </div>
     </div>
-
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
- 
-    
 </body>
 
 </html>

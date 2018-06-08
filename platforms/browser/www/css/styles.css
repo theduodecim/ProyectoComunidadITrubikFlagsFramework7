@@ -168,3 +168,26 @@ div[class*="col"] {
   height: 30px;
   width: 50px;
 }
+
+#ENG{
+  background-color: transparent;
+  background-image: src("")
+}
+
+#closeButton {
+  color: black;
+}
+#toolBarPicker {
+  
+}
+
+#picker {
+  width: 100%;
+  height: 50%;
+  overflow-y: scroll;
+}
+
+#changeENG {
+  background-color:transparent;
+  
+}

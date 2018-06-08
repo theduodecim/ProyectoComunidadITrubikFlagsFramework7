@@ -1,5 +1,13 @@
-var $$ = Dom7;
+/*var $$ = Dom7;
+var animate = new Framework7();
 
+
+
+$$(document).on('deviceready', function() {
+    
+  $$("<p>").attr("type","button").value("hola").css("background-color", "black");
+
+    
 window.cubeAnimation = $$(document).ready( function() {
     // (selector).animate({styles},speed,easing,callback)
     $$("#button1")
@@ -69,3 +77,5 @@ window.cubeAnimation = $$(document).ready( function() {
 
 
 });
+
+});*/
