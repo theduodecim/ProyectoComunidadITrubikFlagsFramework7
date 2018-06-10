@@ -21,7 +21,9 @@ var $$ = Dom7;
 
 
 
+
 // VARIABLES GLOBALES
+var pick = "";
 var flagName = "";
 var flagDescription = "";
 var flagDescriptionText = "";
@@ -187,11 +189,22 @@ $$(document).on('deviceready', function() {
  });
  
  
+  $$("#leftpanelbutton").on("click", function() {
   
+          var url = "https://restcountries.eu/rest/v2/"
+           $$.getJSON(url, function(request){
+            pick = request[Math.floor(Math.random() * request.length)];
+           });
+             $$("#ciudad").text(pick.name);
+              $$("#icon").attr("src", pick.flag);
+              $$("#timezones").text("La hora es: " + pick.timezones)
+              $$("#population").text("Poblacion: " + pick.population);    
+               $$("#region").text("Region: " + pick.region);          
+                console.log(pick);
+                 });
+        
  
-  
-   
- 
+
  
  
  
@@ -321,7 +334,6 @@ $$(document).on('deviceready', function() {
     
    
    /*var left = $$('.RubikTheflag').offset().left;*/ // Get the calculated left position
-    var right = $$('.RubikTheflag').transform('rotate(90deg)');
  /* console.log(right);*/
  function randomcubecolors() {
          var randomConvination = Math.floor((Math.random() * 3) + 1)
