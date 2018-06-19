@@ -92,22 +92,24 @@
                 <div data-page="index" class="page">
                     <!-- Scrollable page content -->
                     <div class="page-content">
+                    <!--    <div class="fallingCube" id="cube1"></div>
+                         <div class="fallingCube" id="cube2"></div>
+                          <div class="fallingCube" id="cube3"></div>
+                           <div class="fallingCube" id="cube4"></div>
+                            <div class="fallingCube" id="cube5"></div>
+                             <div class="fallingCube" id="cube6"></div>-->
                         <div class="content-block">
                            <div class="row no-gutter">
-                               <div class="col-80">
                                   <div align="center" class="tutorial">
-                                   <h1 id="tutorialWelcome">Bienvenidos</h1> 
-                                    <h4 id="tutorialQuote">Es Hora de explorar el mundo con Rubiks's Cube Flags!</h4> 
-                                     <h5 id="tutorialInstruction"> Primero Preciona el cubo y obtendras tus colores y banderas del Dia! Luego preciona Explore! para investigar! y conocer! mas sobre esta bandera!
+                                   <h1    id="tutorialWelcome">Bienvenidos</h1> 
+                                    <h4   id="tutorialQuote">Es Hora de explorar el mundo con Rubiks's Cube Flags!</h4> 
+                                     <h5  id="tutorialInstruction"> Primero Preciona el cubo y obtendras tus colores y banderas del Dia! Luego preciona Explore! para investigar! y conocer! mas sobre esta bandera!
                                        </h5> 
-                                 </div>
                                </div>
-                               
                                <div class="row no-gutter">
                               <div class="col-40">
                               <div align="center" class="cube">
                                    <div class="rubixbox">
-                                    <!--<input id="rubixBox" type="button">-->
                                     <div class="btn-group">
                                         <button class="RubikTheflag" id="button1"></button><button class="RubikTheflag" id="button2"></button><button class="RubikTheflag" id="button3"></button> <br>
                                         <button class="RubikTheflag" id="button4"></button><button  class="RubikTheflag" id="button5"></button><button class="RubikTheflag" id="button6"></button> <br>
@@ -115,21 +117,27 @@
                                     </div>
                               </div>
                         </div>
+                        <div class="col-40">
+                        <p id="cubeTitle"> The Amazing Cube</p>     
+                        <p id="flagname"></p> 
+                        </div>
+                          </div>
                                </div>
-                               <div class="col-40">
-                                <div align="center" class="flagsColors">
-                                  <button class="flagbutton" id="flagbutton1"></button> <br>
-                                  <button class="flagbutton" id="flagbutton2"></button> <br>
-                                  <button class="flagbutton" id="flagbutton3"></button> <br>
+                                <div class="row no-gutter">
+                                <!-- <div class="col-40">-->
+                               <!-- <div align="center" class="flagsColors">
+                                  <button class="flagbutton" id="flagbutton1"></button>
+                                  <button class="flagbutton" id="flagbutton2"></button> 
+                                  <button class="flagbutton" id="flagbutton3"></button>
                                   </div>
-                               </div>
-                               </div>
-                               
+                                </div>-->
+                               <!-- <p id="thecolors2"> The Colors </p>  
+                                <p id="thecolors1"> The Colors </p>  -->
+                              <!-- </div>-->
                                 <div class="row no-gutter">
                                 <div id="buttonexplorehere" class="col-25">
-                                   
-                               <button class="checkFlag" id="checkflagbutton"><a id="checkflagText" align="center" href="page2.html">Explore<p id="flagname"></p></a></button> 
-                            
+                                  
+                         <button class="checkFlag" id="checkflagbutton"><a id="checkflagText" align="center" href="page2.html">Explore</a></button> 
                             <!-- Link to another page -->
                         <!-- <a href="paperbackground.html">Paper</a>-->
                         </div>
@@ -143,6 +151,21 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript" src="lib/Phaser/phaser.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCvX2hnnuWH3e-TGv9ZoTFqjQlWPG57tkM",
+    authDomain: "rubik-s-cube-flags.firebaseapp.com",
+    databaseURL: "https://rubik-s-cube-flags.firebaseio.com",
+    projectId: "rubik-s-cube-flags",
+    storageBucket: "rubik-s-cube-flags.appspot.com",
+    messagingSenderId: "131404989922"
+  };
+  firebase.initializeApp(config);
+    </script>
+    
 </body>
 
 </html>

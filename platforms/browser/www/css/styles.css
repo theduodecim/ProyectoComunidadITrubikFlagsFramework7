@@ -10,12 +10,96 @@
    See https://github.com/apache/cordova-plugin-statusbar
 */
 
+.page-content {
+  background-image: url("https://www.filterforge.com/upload/forum/upload/44d/Cuberism%20Qbert%20multicolor.jpg");
+}
+
+.navbar-inner {
+   background-image: url("https://www.filterforge.com/upload/forum/upload/44d/Cuberism%20Qbert%20multicolor.jpg");
+}
+.panel {
+ background-image: url("http://i66.tinypic.com/vgygy.jpg");
+  color: orange;
+}
+.toolbar {
+  background-image: url("https://www.filterforge.com/upload/forum/upload/44d/Cuberism%20Qbert%20multicolor.jpg");
+  color: orange;
+}
+.backgroundpicker {
+  width: 100%;
+  color: orange;
+  background-image: url("http://i66.tinypic.com/vgygy.jpg");
+}
+#innerpicker {
+   background-image: url("http://i66.tinypic.com/vgygy.jpg");
+}
+#picker {
+   background-image: url("http://i66.tinypic.com/vgygy.jpg");
+}
+.toolbarpicker {
+  color: orange;
+}
+
+
+* {
+  font-family: Serif;
+}
+
+
 .statusbar-overlay {
     background: #000000;
 }
 .row {
   margin-bottom: 15px;
 }  
+
+#cube1{
+    box-shadow: 0 9px #999;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+#cube1:hover{
+   background-color: #3e8e41
+}
+#cube2{
+   position: relative;
+   box-shadow: 0 9px #999;
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+}
+#cube3{
+    position: relative;
+    box-shadow: 0 9px #999;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+}
+#cube4{
+    position: relative;
+   box-shadow: 0 9px #999;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+}
+#cube5{
+    position: relative;
+    box-shadow: 0 9px #999;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+#cube6 {
+    position: relative;
+    box-shadow: 0 9px #999;
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+}
 
 
 div[class*="col"] {
@@ -27,63 +111,104 @@ div[class*="col"] {
   height:35px;
 }
 
-.tutorial {
-  position: relative;
-  top: 10vw;
-  left: 10vw;
-  right: 20vw;
-  border-style: dotted;
-  background: #fff;
-  text-align: center;
+.flagsColors {
+  position: absolute;
+  bottom: 100px;
+  left: 2vw;
+  width: 35vw;
+  height: 30vw;
   color: #000;
-  border: 1px solid #ddd;
-  padding: 5px;
-  margin-bottom: 15px;
-  font-size: 10px;
-  padding-left: 5%;
-  word-break:break-all;
-}
-
-.flagColors {
-  position: relative;
-  top: 30vw;
-  left: 10vw;
-  right: 20vw;
-  border-style: dotted;
-  background: #fff;
-  text-align: center;
-  color: #000;
-  border: 1px solid #ddd;
-  padding: 5px;
-  margin-bottom: 15px;
-  font-size: 12px;
-  padding-left: 5%;
-}
-.cube {
-  position: relative;
-  align-content: center;    
-  top: 60vw;
-  left: 10vw;
-  right: 5vw;
-  width: 30vw;
-  border-style: dotted;
-  background: #fff;
-  text-align: center;
-  color: #000;
-  border: 1px solid #ddd;
   padding: 4px;
   margin-bottom: 15px;
   font-size: 12px;
   padding-left: 5%;
+}
+
+#tutorialWelcome {
+ shadow-color: red;
+}
+#tutorialQuote {
+   color: red;
+}
+#tutorialInstruction {
+   color: red;
+}
+
+.tutorial {
+  background-image: url("http://i66.tinypic.com/vgygy.jpg");
+  background-color: transparent;
+   border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px;
+  position: absolute;
+  align-content: center;   
+  top: 70px;
+  left: 25vw;
+  right: 5vw;
+  width: 150px;
+  height: 250px;
+  color: #000;
+  padding: 4px;
+  margin-bottom: 15px;
+  font-size: 12px;
+  padding-left: 5%;
+}
+
+
+
+.cube {
+  background-color: transparent;
+  position: absolute;
+  align-content: center;   
+  top: 350px;
+  left: 25vw;
+  right: 5vw;
+  width: 35vw;
+  height: 30vw;
+  padding-left: 5%;
   transition-duration:3.5s;
+}
+#thecolors2 {
+  position: absolute;
+  top: 250px;
+  left: 73vw;
+  font-size: 17px;
+}
+
+#thecolors1{
+  position: absolute;
+  top: 250px;
+  right: 73vw;
+  font-size: 17px;
+}
+#cubeTitle{
+  position: absolute;
+  top: 370px;
+  right: 73vw;
+  font-size: 17px;
+  
+}
+#flagname{
+  position: absolute;
+  background-color: grey;
+  top: 375px;
+  left: 65vw;
+  text-align: center;
+  outline: none;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 0 9px #334;
 }
 
 .RubikTheflag {
+  background-image: url("http://i66.tinypic.com/vgygy.jpg");
   position: relative;
   left: 1vw;
   right: 1vw;
   bottom: 1vw;
   top: 1vw;
+  width: 40px;
+  height: 30px;
 }
 
 
@@ -91,39 +216,42 @@ div[class*="col"] {
 .flagsColors { 
   position: relative;
   align-content: center;    
-  top: 62vw;
-  left: 5vw;
+  top: 5vw;
+  right: 22vw;
   width: 40vw;
-  border-style: dotted;
   background: #fff;
   text-align: center;
   color: #000;
-  border: 1px solid #ddd;
   padding: 5px;
   margin-bottom: 15px;
   font-size: 12px;
 }
 
 .flagbutton {
-   width: 40px;
-   height: 25px;
+   width: 50px;
+   height: 50px;
    border-radius: 100%;
 }
 
-
+#checkflagbutton {
+  background-image: url("http://i66.tinypic.com/vgygy.jpg");
+  font-size: 30px;
+  
+}
 
 .checkFlag {
-  position: relative;
-  align-content: center;    
-  top: 80vw;
-  left: 30vw;
-  right: 20vw;
-  width: 40vw;
-  height: 50px;
+  position: absolute;
+  align-content: center;   
+  top: 480px;
+  left: 60vw;
+  right: 5vw;
   text-align: center;
-  padding: 5px;
+  border: 1px solid #ddd;
+  padding: 4px;
   margin-bottom: 15px;
   font-size: 12px;
+  padding-left: 5%;
+  transition-duration:3.5s;
 }
 
 .burgernav {
@@ -134,6 +262,11 @@ div[class*="col"] {
  /* background-image: url("http://i64.tinypic.com/eg67f8.jpg");*/
    background-size: cover !important;
 }
+
+
+
+
+
 
 /* page2 */
 .flagsColorspage2 {
