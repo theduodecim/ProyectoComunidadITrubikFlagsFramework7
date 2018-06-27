@@ -29,7 +29,10 @@ var flagDescription = "";
 var flagDescriptionText = "";
 var flagImage;
 var ENG = false;
-
+var email;
+var password;
+var newEmail;
+var newPassword;
 
 var flagsConvinations = ["rgb", "rgo", "rgw", "rgy" , "rbw", "rbo", "gbw", "row", "bow", "gow",
  "gbo", "rby", "gby", "ory", "ogy", "oby", "wry", "wgy", "wby", "owy"];
@@ -259,7 +262,6 @@ $$(document).on('deviceready', function() {
       ENG = true;
       console.log(ENG);
       if(ENG == true) {
-     $$("#tutorialWelcome").text("Welcome"); 
      $$("#tutorialQuote").text("It's time to explore the world with Rubik's Cube Flags");
      $$("#tutorialInstruction").text("First Press the Cube and Get the your colors of the day!." + "\n" + "Seccond, Now you got the colors press the Explore" + "to know more about your new Flag!");
      $$("#leftpanelnews").text("News");
@@ -298,14 +300,47 @@ $$(document).on('deviceready', function() {
     var flagsConv = flagsConvinations.slice(0);
     var fRgb = flagsRgb.slice(0); 
     
-    
+    function randomColorsFunction() {
+    var randomConvination = Math.floor((Math.random() * 6) + 1)
+     console.log(randomConvination)
+    return randomConvination;
+}
     
     
     function randomConvinationFunction() {
     var randomConvination = Math.floor((Math.random() * 2) + 1)
      console.log(randomConvination)
     return randomConvination;
-   
+}
+
+switch(randomColorsFunction()) {
+case 1:
+    $$("#checkflagbutton").css(
+    "background-color", 'red');
+    break;
+    
+case 2: 
+     $$("#checkflagbutton").css(
+    "background-color", 'blue');
+    break;
+    
+case 3:
+      $$("#checkflagbutton").css(
+    "background-color", 'orange');
+break;
+
+case 4: 
+      $$("#checkflagbutton").css(
+    "background-color", 'green');
+    break;
+case 5: 
+      $$("#checkflagbutton").css(
+    "background-color", 'yellow');
+    break;
+case 6: 
+      $$("#checkflagbutton").css(
+    "background-color", 'white');
+    break;
 }
     //check case 0
     switch(randomConvinationFunction()) {
@@ -490,23 +525,58 @@ $$(document).on('deviceready', function() {
  switch (randomcubecolors()) {
      case 1:
         $$(".RubikTheflag").css("background-color", "red");
-  $$("#button1").css("background-color", "blue");
-  $$('.cube').transform('rotate(180deg)');
+        $$(".RubikTheflag").css("background-color", "orange");
+        $$("#button1").css("background-color", "red");
+        $$("#button2").css("background-color", "yellow");
+        $$("#button3").css("background-color", "blue");
+        $$("#button4").css("background-color", "white");
+        $$("#button5").css("background-color", "green");
+        $$("#button6").css("background-color", "red");
+        $$("#button7").css("background-color", "blue");
+        $$("#button8").css("background-color", "red");
+        $$(".RubikTheflag").css("-webkit-clip-path", "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)");
+        $$('.cube').transform('rotate(180deg)');
       break;
        case 2:
         $$(".RubikTheflag").css("background-color", "green");
-  $$("#button1").css("background-color", "yellow");
-  $$('.cube').transform('rotate(90deg)');
+        $$(".RubikTheflag").css("background-color", "orange");
+        $$("#button1").css("background-color", "red");
+        $$("#button2").css("background-color", "yellow");
+        $$("#button3").css("background-color", "blue");
+        $$("#button4").css("background-color", "white");
+        $$("#button5").css("background-color", "green");
+        $$("#button6").css("background-color", "red");
+        $$("#button7").css("background-color", "blue");
+        $$("#button8").css("background-color", "red");
+        $$(".RubikTheflag").css("-webkit-clip-path", "polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)");
+        $$('.cube').transform('rotateY(180deg)');
          break;
      case 3:
         $$(".RubikTheflag").css("background-color", "yellow");
-  $$("#button1").css("background-color", "blue");
-  $$('.cube').transform('rotate(-90deg)');
+        $$(".RubikTheflag").css("background-color", "orange");
+        $$("#button1").css("background-color", "red");
+        $$("#button2").css("background-color", "yellow");
+        $$("#button3").css("background-color", "blue");
+        $$("#button4").css("background-color", "white");
+        $$("#button5").css("background-color", "green");
+        $$("#button6").css("background-color", "red");
+        $$("#button7").css("background-color", "blue");
+        $$("#button8").css("background-color", "red");
+        $$(".RubikTheflag").css("-webkit-clip-path", "polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%)");
+        $$('.cube').transform('rotate(-90deg)');
          break;
            case 4:
         $$(".RubikTheflag").css("background-color", "orange");
         $$("#button1").css("background-color", "red");
-        $$('.cube').transform('rotate(-180deg)');
+        $$("#button2").css("background-color", "yellow");
+        $$("#button3").css("background-color", "blue");
+        $$("#button4").css("background-color", "white");
+        $$("#button5").css("background-color", "green");
+        $$("#button6").css("background-color", "red");
+        $$("#button7").css("background-color", "blue");
+        $$("#button8").css("background-color", "red");
+        $$(".RubikTheflag").css("-webkit-clip-path", "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)");
+        $$('.cube').transform('rotateY(-180deg)');
          break;
  }
 
@@ -519,7 +589,6 @@ $$(document).on('deviceready', function() {
     /*var exploreButton =  $$('<a style="background-color: red" id="checkflagText" align="center" href="page2.html">Explore</a>');
     $$("#buttonexplorehere").append(exploreButton)*/
     
-    
        
   $$("#checkflagText").on("click", function(event) {
       flagName =  $$("#flagname").text();
@@ -528,6 +597,14 @@ $$(document).on('deviceready', function() {
       console.log(flagDescriptionText);
      /* appendTo("#textdescription");*/
   })
+
+
+
+    
+
+
+
+
 
 
 
@@ -552,6 +629,75 @@ $$(document).on('pageInit', function (e) {
       $$(flagImage).appendTo("#flagimg2");
     }
     
+})
+    
+    
+ $$(document).on('pageInit', function (e) {
+    // Get page data from event data
+    var page = e.detail.page;
+     if (page.name === 'firebaseauthpage') {
+   // Following code will be executed for page with data-page attribute equal to "about"
+     
+      firebase.auth().onAuthStateChanged(function(user) {
+     if (user) {
+    // User is signed in.
+        console.log("yeahh you logged in to the nasa");
+    // ...
+  } else {
+    // User is signed out.
+    // ...
+  }
+   });
+     
+  $$("#SignIn").on("click", function() {
+        email = $$("#email").val();
+        password = $$("#password").val();
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        var errorCode = error.code;
+         var errorMessage = error.message;
+  })
+     alert("You Are logged with :" + email );
+     window.location = "index.html";
+});
+}
+})
+   $$(document).on('pageInit', function (e) {
+    // Get page data from event data
+    var page = e.detail.page;
+     if (page.name === 'firebaseauthpageSignUp') {
+   // Following code will be executed for page with data-page attribute equal to "about"
+     
+      firebase.auth().onAuthStateChanged(function(user) {
+     if (user) {
+    // User is signed in.
+        console.log("yeahh you logged in to the nasa");
+    // ...
+  } else {
+    // User is signed out.
+    // ...
+  }
+   });
+     
+  $$("#createAcc").on("click", function() {
+        newEmail = $$("#newEmail").val();
+        newPassword = $$("#newPassword").val();
+        firebase.auth().createUserWithEmailAndPassword(newEmail, newPassword).catch(function(error) {
+          // Handle Errors here.
+         var errorCode = error.code;
+         var errorMessage = error.message;
+          // ...
+        });
+      alert("Successful Accound Created Your Username is : " + newEmail + "And your password is : " + newPassword);
+      window.location = "index.html";
+});
+}
+})    
+      
+      
+      
+      
+        
+    
   /*
    if (page.name === 'paperbackground') {
      /* var rectangle = new Rectangle ([200, 200], [200,300]); 
@@ -565,8 +711,8 @@ $$(document).on('pageInit', function (e) {
     
     
     
-    //PAPER PLUGIN NIGHTMARE HOURS
-  /*  Framework7.prototype.plugins.myPlugin = function (app, params) {
+//PAPER PLUGIN NIGHTMARE HOURS
+   Framework7.prototype.plugins.myPlugin = function (app, params) {
     	var canvas = document.getElementById('tagtree');
 		// Create an empty project and a view for the canvas:
 		paper.setup(canvas);
@@ -583,7 +729,7 @@ $$(document).on('pageInit', function (e) {
 		// Draw the view now:
 		paper.view.draw();
 		console.log(params.foo)
-};     */
+};  
     // Only executed our code once the DOM is ready.
 		// Get a reference to the canvas object
 	
@@ -597,7 +743,7 @@ $$(document).on('pageInit', function (e) {
         myApp.alert('Here comes About page');
     }*/
     
-})
+
 
 // Option 2. Using live 'pageInit' event handlers for each page
 $$(document).on('pageInit', '.page[data-page="about"]', function (e) {

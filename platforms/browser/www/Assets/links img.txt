@@ -1,0 +1,34 @@
+background 
+http://i63.tinypic.com/o5x3xf.png
+
+background resize 1
+http://i64.tinypic.com/i26kv4.png
+background resize 2
+http://i63.tinypic.com/1zgdmyr.png
+background flip 90
+http://i68.tinypic.com/k2zlew.png
+background flip 90 resize 250
+http://i63.tinypic.com/wjdikl.png
+
+cubes
+
+blue
+http://i66.tinypic.com/fmho2r.png 
+
+green
+http://i66.tinypic.com/2w39bbt.png
+
+orange 
+http://i63.tinypic.com/5l2zb6.png
+
+red 
+http://i68.tinypic.com/a4204l.png
+
+white
+http://i65.tinypic.com/2r7bl9w.png
+
+yellow
+http://i63.tinypic.com/a0ic8p.png
+
+registerstar
+http://i63.tinypic.com/25imczq.png
