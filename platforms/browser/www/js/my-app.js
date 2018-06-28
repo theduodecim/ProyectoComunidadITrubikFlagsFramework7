@@ -33,6 +33,11 @@ var email;
 var password;
 var newEmail;
 var newPassword;
+ var  url = panelurl;
+        $$.getJSON(url, function(request) {
+            var comingrequest = request;
+            pick = comingrequest[Math.floor(Math.random() * request.length)];
+        });
 
 var flagsConvinations = ["rgb", "rgo", "rgw", "rgy" , "rbw", "rbo", "gbw", "row", "bow", "gow",
  "gbo", "rby", "gby", "ory", "ogy", "oby", "wry", "wgy", "wby", "owy"];
@@ -224,9 +229,6 @@ var mainView = myApp.addView('.view-main', {
 // Handle Cordova Device Ready Event
 $$(document).on('deviceready', function() {
   
-  
-   
- 
  console.log(ENG);
  
 
@@ -276,23 +278,22 @@ $$(document).on('deviceready', function() {
  });
  
  
-    $$("#leftpanelbutton").on("click", function() {
-        var  url = panelurl;
-        $$.getJSON(url, function(request) {
-            pick = request[Math.floor(Math.random() * request.length)];
-        });
-        $$("#ciudad").text(pick.name);
-        $$("#icon").attr("src", pick.flag);
-        $$("#timezones").text("La hora es: " + pick.timezones)
-        $$("#population").text("Poblacion: " + pick.population);    
-        $$("#region").text("Region: " + pick.region);          
+    $$("#leftpanelbutton").on("click", function(event) {
+        var panelname = pick.name;
+        var pickflag = pick.flag;
+        var panelhour = pick.timezones;
+        var panelpopulation = pick.population;
+        var panelregion = pick.region;
+        
+        $$("#ciudad").text(panelname);
+        $$("#icon").attr("src", pickflag);
+        $$("#timezones").text("La hora es: " + panelhour)
+        $$("#population").text("Poblacion: " + panelpopulation);    
+        $$("#region").text("Region: " + panelregion);          
         console.log("lpb:" + pick);
     });
         
- 
 
- 
- 
  
  
   $$(".RubikTheflag").on("click", function(event) {
@@ -517,7 +518,7 @@ case 6:
    /*var left = $$('.RubikTheflag').offset().left;*/ // Get the calculated left position
  /* console.log(right);*/
  function randomcubecolors() {
-         var randomConvination = Math.floor((Math.random() * 4) + 1)
+         var randomConvination = Math.floor((Math.random() * 6) + 1)
          console.log("random RGWflagWorking");
          return randomConvination;
       }
@@ -534,7 +535,7 @@ case 6:
         $$("#button6").css("background-color", "red");
         $$("#button7").css("background-color", "blue");
         $$("#button8").css("background-color", "red");
-        $$(".RubikTheflag").css("-webkit-clip-path", "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)");
+        $$(".RubikTheflag").css("-webkit-clip-path", "polygon(48% 16%, 38% 20%, 26% 28%, 21% 41%, 19% 53%, 24% 66%, 32% 74%, 41% 78%, 52% 78%, 62% 75%, 71% 72%, 79% 64%, 52% 49%, 66% 36%, 79% 23%, 70% 18%, 59% 16%)");
         $$('.cube').transform('rotate(180deg)');
       break;
        case 2:
@@ -577,6 +578,32 @@ case 6:
         $$("#button8").css("background-color", "red");
         $$(".RubikTheflag").css("-webkit-clip-path", "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)");
         $$('.cube').transform('rotateY(-180deg)');
+         break;
+             case 5:
+        $$(".RubikTheflag").css("background-color", "orange");
+        $$("#button1").css("background-color", "red");
+        $$("#button2").css("background-color", "yellow");
+        $$("#button3").css("background-color", "blue");
+        $$("#button4").css("background-color", "white");
+        $$("#button5").css("background-color", "green");
+        $$("#button6").css("background-color", "red");
+        $$("#button7").css("background-color", "blue");
+        $$("#button8").css("background-color", "red");
+        $$(".RubikTheflag").css("-webkit-clip-path", "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)");
+        $$('.cube').transform('rotate(-360deg)');
+         break;
+             case 6:
+        $$(".RubikTheflag").css("background-color", "orange");
+        $$("#button1").css("background-color", "red");
+        $$("#button2").css("background-color", "yellow");
+        $$("#button3").css("background-color", "blue");
+        $$("#button4").css("background-color", "white");
+        $$("#button5").css("background-color", "green");
+        $$("#button6").css("background-color", "red");
+        $$("#button7").css("background-color", "blue");
+        $$("#button8").css("background-color", "red");
+        $$(".RubikTheflag").css("-webkit-clip-path", "polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%)");
+        $$('.cube').transform('rotateY(360deg)');
          break;
  }
 

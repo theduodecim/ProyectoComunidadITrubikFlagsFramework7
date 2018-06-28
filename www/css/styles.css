@@ -55,6 +55,22 @@
   margin-bottom: 15px;
 }  
 
+
+#ENG {
+    background-color: white;
+    color: white;
+}
+#changeENG {
+    color: white;
+}
+
+#closeButton {
+    color: white;
+    background-color: white;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+  
+}
+
 #cube1{
     box-shadow: 0 9px #999;
     width: 100px;
@@ -140,15 +156,15 @@ div[class*="col"] {
   background-color: transparent;
   border: 1px solid;
   padding: 10px;
-  box-shadow: 10px 1px;
+  box-shadow: 9px -1px;
   position: absolute;
   align-content: center;   
   top: 70px;
   left: 25vw;
   right: 5vw;
   width: 160px;
-  height: 260px;
-  color: red;
+  height: 256px;
+  color: dark blue;
   padding: 4px;
   margin-bottom: 15px;
   font-size: 12px;
@@ -162,7 +178,7 @@ div[class*="col"] {
   background-color: transparent;
   position: absolute;
   align-content: center;   
-  top: 350px;
+  top: 390px;
   left: 25vw;
   right: 5vw;
   width: 35vw;
