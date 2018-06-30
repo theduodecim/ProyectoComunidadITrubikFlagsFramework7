@@ -71,53 +71,194 @@
   
 }
 
-#cube1{
-    box-shadow: 0 9px #999;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
+
+.fallingCube {
+   transition-duration:2.5s;
+}
+#fallingCube1{
+   background-image: url("http://i66.tinypic.com/fmho2r.png");
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
 }
 
-#cube1:hover{
-   background-color: #3e8e41
+#fallingCube2{
+   background-image: url("http://i66.tinypic.com/2w39bbt.png");
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
 }
-#cube2{
-   position: relative;
-   box-shadow: 0 9px #999;
-    width: 10px;
-    height: 10px;
-    background-color: blue;
+#fallingCube3{
+   background-image: url("http://i63.tinypic.com/5l2zb6.png");
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
 }
-#cube3{
-    position: relative;
-    box-shadow: 0 9px #999;
-    width: 10px;
-    height: 10px;
-    background-color: yellow;
+#fallingCube4{
+   background-image: url("http://i68.tinypic.com/a4204l.png");
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
 }
-#cube4{
-    position: relative;
-   box-shadow: 0 9px #999;
-    width: 10px;
-    height: 10px;
-    background-color: green;
+#fallingCube5{
+   background-image: url("http://i65.tinypic.com/2r7bl9w.png");
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
 }
-#cube5{
-    position: relative;
-    box-shadow: 0 9px #999;
-    width: 10px;
-    height: 10px;
-    background-color: white;
+#fallingCube6{
+   background-image: url("http://i63.tinypic.com/a0ic8p.png");
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
 }
-#cube6 {
-    position: relative;
-    box-shadow: 0 9px #999;
-    width: 10px;
-    height: 10px;
-    background-color: orange;
+.fallingCube1 {
+   position: absolute;
+   left: 5%;
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
 }
+
+.fallingCube2 {
+    position: absolute;
+    left: 20%;
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
+}
+.fallingCube3 {
+   position: absolute;
+   left: 35%;
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
+}
+.fallingCube4 {
+    position: absolute;
+    left: 55%;
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
+}
+.fallingCube5 {
+    position: absolute;
+    left: 75%;
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
+}
+.fallingCube6 {
+    position: absolute;
+    left: 90%;
+   width: 40px;
+   height: 40px;
+   border-style: none;
+   transition-duration:2.5s;
+}
+
+
+
+.fallingCubeblue {
+   background-image: url("http://i66.tinypic.com/fmho2r.png"); 
+    width: 25px;
+   height: 25px;
+   transition-duration:2.5s;
+    border-style: none;
+    transform: rotate(160deg);
+}
+
+.fallingCubegreen {
+     background-image: url("http://i66.tinypic.com/2w39bbt.png"); 
+    width: 25px;
+   height: 25px;
+   transition-duration:2.5s;
+    border-style: none;
+    transform: rotate(160deg);
+}
+.fallingCubeorange {
+   background-image: url("http://i63.tinypic.com/5l2zb6.png"); 
+     width: 25px;
+   height: 25px;
+   transition-duration:2.5s;
+    border-style: none;
+    transform: rotate(160deg);
+}
+.fallingCubered {
+    background-image: url("http://i68.tinypic.com/a4204l.png"); 
+    width: 25px;
+   height: 25px;
+   transition-duration:2.5s;
+    border-style: none;
+    transform: rotate(160deg);
+}
+.fallingCubewhite {
+    background-image: url("http://i65.tinypic.com/2r7bl9w.png"); 
+    width: 25px;
+   height: 25px;
+   transition-duration:2.5s;
+    border-style: none;
+    transform: rotate(160deg);
+}
+.fallingCubeyellow{
+    background-image: url("http://i63.tinypic.com/a0ic8p.png"); 
+    width: 25px;
+   height: 25px;
+   transition-duration:2.5s;
+    border-style: none;
+    transform: rotate(160deg);
+}
+.thefall{
+     transition-duration:8.5s;
+}
+
+#FunnyBackgroundrecover{
+  position: absolute;
+  background-image: url("http://i63.tinypic.com/25imczq.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+ background-color: transparent;
+ background-attachment: inherit;
+  top: 95px;
+  left: 85vw;
+  height: 30px;
+  width: 60px;
+  text-align: center;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #334;
+}
+#FunnyBackgroundExplode{
+  position: absolute;
+  background-image: url("http://i63.tinypic.com/jtqwiw.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+ background-color: transparent;
+ background-attachment: inherit;
+  top: 95px;
+  right: 80vw;
+  height: 30px;
+  width: 60px;
+  text-align: center;
+  outline: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #334;
+}
+
+
 
 
 div[class*="col"] {
@@ -318,6 +459,7 @@ div[class*="col"] {
   left: 75vw;
   height: 50px;
   width: 50px;
+  background-color: transparent;
 }
 #checkflagText {
     position: absolute;
