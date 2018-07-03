@@ -61,6 +61,7 @@
         <access origin="*" />
         <access origin="https://restcountries.eu/rest/v2/" />
         <access origin="https://www.patreon.com/bePatron?c=1798557" />
+        <access origin="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
         <allow-intent href="https://www.patreon.com/bePatron?c=1798557" />
         <allow-intent href="https://restcountries.eu/rest/v2/" />
         <allow-intent href="http://*/*" />
@@ -71,6 +72,8 @@
         <allow-intent href="geo:*" />
         <allow-intent href="https://restcountries.eu/rest/v2/" />
         <allow-intent href="https://www.patreon.com/bePatron?c=1798557" />
+        <allow-intent href="https://restcountries.eu/rest/v2/" />
+        <allow-intent href="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
         <allow-intent href="market:*" />
         <allow-navigation href="http://https://www.patreon.com/bePatron?c=1798557/*" />
         <allow-navigation href="https://https://www.patreon.com/bePatron?c=1798557/*" />
@@ -78,7 +81,22 @@
         <allow-navigation href="http://https://restcountries.eu/rest/v2//*" />
         <allow-navigation href="https://https://restcountries.eu/rest/v2//*" />
         <allow-navigation href="data:https://restcountries.eu/rest/v2/" />
-       
+        <allow-navigation href="http://git+https://github.com/apache/cordova-plugin-splashscreen.git" />
+        <allow-navigation href="https://git+https://github.com/apache/cordova-plugin-splashscreen.git" />
+        <allow-navigation href="data:git+https://github.com/apache/cordova-plugin-splashscreen.git" />
+        <preference name="SplashScreen" value="img/logo.png" />
+        <preference name="SplashScreenDelay" value="10000" />
+        <preference name="ShowSplashScreen" value="false" />
+        <preference name="SplashScreenWidth" value="600" />
+        <preference name="SplashScreenHeight" value="300" />
+        <splash density="land-hdpi" src="res/screen/android/splash-land-hdpi.png" />
+        <splash density="land-ldpi" src="res/screen/android/splash-land-ldpi.png" />
+        <splash density="land-mdpi" src="res/screen/android/splash-land-mdpi.png" />
+        <splash density="land-xhdpi" src="res/screen/android/splash-land-xhdpi.png" />
+        <splash density="port-hdpi" src="res/screen/android/splash-port-hdpi.png" />
+        <splash density="port-ldpi" src="res/screen/android/splash-port-ldpi.png" />
+        <splash density="port-mdpi" src="res/screen/android/splash-port-mdpi.png" />
+        <splash density="port-xhdpi" src="res/screen/android/splash-port-xhdpi.png" />
     </platform>
     <platform name="ios">
     </platform>
@@ -89,5 +107,13 @@
     </platform>
     <platform name="windows">
     </platform>
+    <platform name="browser">
+        <preference name="SplashScreen" value="img/splashscreen.png" />
+        <preference name="SplashScreenDelay" value="10000" />
+        <preference name="ShowSplashScreen" value="false" />
+        <preference name="SplashScreenWidth" value="600" />
+        <preference name="SplashScreenHeight" value="300" />
+    </platform>
+    <plugin name="cordova-plugin-splashscreen" spec="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
 </widget>

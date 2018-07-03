@@ -127,6 +127,7 @@
 .fallingCube2 {
     position: absolute;
     left: 20%;
+
    width: 40px;
    height: 40px;
    border-style: none;
@@ -135,6 +136,7 @@
 .fallingCube3 {
    position: absolute;
    left: 35%;
+
    width: 40px;
    height: 40px;
    border-style: none;
@@ -143,6 +145,7 @@
 .fallingCube4 {
     position: absolute;
     left: 55%;
+ 
    width: 40px;
    height: 40px;
    border-style: none;
@@ -151,6 +154,7 @@
 .fallingCube5 {
     position: absolute;
     left: 75%;
+ 
    width: 40px;
    height: 40px;
    border-style: none;
@@ -159,6 +163,7 @@
 .fallingCube6 {
     position: absolute;
     left: 90%;
+
    width: 40px;
    height: 40px;
    border-style: none;
@@ -219,6 +224,13 @@
 .thefall{
      transition-duration:8.5s;
 }
+.fallingcubes{
+    position: relative;
+    bottom: 235px;
+    left: 20px;
+}
+
+
 
 #FunnyBackgroundrecover{
   position: absolute;

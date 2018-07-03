@@ -9,6 +9,9 @@
   "installed_plugins": {
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.Rubik"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.Rubik"
     }
   },
   "dependent_plugins": {}
