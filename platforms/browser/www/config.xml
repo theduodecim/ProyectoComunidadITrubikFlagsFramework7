@@ -1,30 +1,28 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.Rubik's Cube Flags" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>helloworld</name>
+    <name>Rubik</name>
     <description>
-        A basic Framework7 template for PhoneGap.
+        A basic Framework7 template for thinking and wait now.
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         Apache Cordova Team
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <access origin="https://restcountries.eu/rest/v2/" value="true" />
+    <access origin="https://www.patreon.com/bePatron?c=1798557" value="true" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
+    <allow-intent href="https://restcountries.eu/rest/v2/" value="true" />
+    <allow-intent href="https://www.patreon.com/bePatron?c=1798557" value="true" />
+    <allow-navigation href="*" />
+    <allow-navigation href="data:*" />
+    <allow-intent href="*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    <access origin="http://i65.tinypic.com/sytlop.png" subdomains="false" />
-    <access origin="https://www.filterforge.com/upload/forum/upload/44d/Cuberism%20Qbert%20multicolor.jpg" subdomains="false" />
-    <access origin="http://i66.tinypic.com/vgygy.jpg" subdomains="false" />
-    <access origin="http://i66.tinypic.com/fmho2r.png" subdomains="false" />
-    <access origin="http://i66.tinypic.com/2w39bbt.png" subdomains="false" />
-    <access origin="http://i63.tinypic.com/5l2zb6.png" subdomains="false" />
-    <access origin="http://i68.tinypic.com/a4204l.png" subdomains="false" />
-    <access origin="http://i65.tinypic.com/2r7bl9w.png" subdomains="false" />
-    <access origin="http://i63.tinypic.com/a0ic8p.png" subdomains="false" />
-    <access origin="http://i63.tinypic.com/25imczq.jpg" subdomains="false" />
-    <access origin="http://i63.tinypic.com/jtqwiw.png" subdomains="false" />
+    <allow-intent href="market:*" />
     <preference name="DisallowOverscroll" value="true" />
 </widget>

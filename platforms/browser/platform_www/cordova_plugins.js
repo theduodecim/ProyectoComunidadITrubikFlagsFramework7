@@ -18,7 +18,8 @@ module.exports = [
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "cordova-plugin-splashscreen": "5.0.3-dev"
+    "cordova-plugin-splashscreen": "5.0.3-dev",
+    "cordova-plugin-whitelist": "1.3.3"
 }
 // BOTTOM OF METADATA
 });
