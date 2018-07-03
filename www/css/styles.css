@@ -11,35 +11,32 @@
 */
 
 .page-content {
-    background-image: url("http://i63.tinypic.com/wjdikl.png");
+    background-image: url("../img/rubicksbackground spash screen.png");
     background-size: cover;
     align-content: center; 
 }
 
 .navbar-inner {
-   background-image: url("https://www.filterforge.com/upload/forum/upload/44d/Cuberism%20Qbert%20multicolor.jpg");
+   background: -webkit-linear-gradient(left, #1e5799 1%,#1e5799 1%,#1e5799 13%,#2989d8 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
 }
 .panel {
- background-image: url("http://i64.tinypic.com/i26kv4.png");
+ background-image: url("../img/rubicksbackground resize 1.png");
   color: black;
 }
 .toolbar {
-  background-image: url("https://www.filterforge.com/upload/forum/upload/44d/Cuberism%20Qbert%20multicolor.jpg");
-  color: orange;
+  background: -webkit-linear-gradient(left, #1e5799 1%,#1e5799 1%,#1e5799 13%,#2989d8 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
 }
 .backgroundpicker {
   width: 100%;
-  color: orange;
-  background-image: url("http://i66.tinypic.com/vgygy.jpg");
+  background: linear-gradient(to right, #cccccc 20%,#eeeeee 39%,#cccccc 59%,#cccccc 73%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 #innerpicker {
-   background-image: url("http://i66.tinypic.com/vgygy.jpg");
+   background: linear-gradient(to right, #cccccc 20%,#eeeeee 39%,#cccccc 59%,#cccccc 73%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 #picker {
-   background-image: url("http://i66.tinypic.com/vgygy.jpg");
+    background: linear-gradient(to right, #cccccc 20%,#eeeeee 39%,#cccccc 59%,#cccccc 73%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .toolbarpicker {
-  color: orange;
 }
 
 
@@ -76,7 +73,7 @@
    transition-duration:2.5s;
 }
 #fallingCube1{
-   background-image: url("http://i66.tinypic.com/fmho2r.png");
+   background-image: url("../img/cubeblue.png");
    width: 40px;
    height: 40px;
    border-style: none;
@@ -84,35 +81,35 @@
 }
 
 #fallingCube2{
-   background-image: url("http://i66.tinypic.com/2w39bbt.png");
+   background-image: url("../img/cubegreen.png");
    width: 40px;
    height: 40px;
    border-style: none;
    transition-duration:2.5s;
 }
 #fallingCube3{
-   background-image: url("http://i63.tinypic.com/5l2zb6.png");
+   background-image: url("../img/cubeorange.png");
    width: 40px;
    height: 40px;
    border-style: none;
    transition-duration:2.5s;
 }
 #fallingCube4{
-   background-image: url("http://i68.tinypic.com/a4204l.png");
+   background-image: url("../img/cubered.png");
    width: 40px;
    height: 40px;
    border-style: none;
    transition-duration:2.5s;
 }
 #fallingCube5{
-   background-image: url("http://i65.tinypic.com/2r7bl9w.png");
+   background-image: url("../img/cubewhite.png");
    width: 40px;
    height: 40px;
    border-style: none;
    transition-duration:2.5s;
 }
 #fallingCube6{
-   background-image: url("http://i63.tinypic.com/a0ic8p.png");
+   background-image: url("../img/cubeyellow.png");
    width: 40px;
    height: 40px;
    border-style: none;
@@ -171,7 +168,7 @@
 
 
 .fallingCubeblue {
-   background-image: url("http://i66.tinypic.com/fmho2r.png"); 
+   background-image: url("../img/cubeblue.png"); 
     width: 25px;
    height: 25px;
    transition-duration:2.5s;
@@ -180,7 +177,7 @@
 }
 
 .fallingCubegreen {
-     background-image: url("http://i66.tinypic.com/2w39bbt.png"); 
+     background-image: url("../img/cubegreen.png"); 
     width: 25px;
    height: 25px;
    transition-duration:2.5s;
@@ -188,7 +185,7 @@
     transform: rotate(160deg);
 }
 .fallingCubeorange {
-   background-image: url("http://i63.tinypic.com/5l2zb6.png"); 
+   background-image: url("../img/cubeorange.png"); 
      width: 25px;
    height: 25px;
    transition-duration:2.5s;
@@ -196,7 +193,7 @@
     transform: rotate(160deg);
 }
 .fallingCubered {
-    background-image: url("http://i68.tinypic.com/a4204l.png"); 
+    background-image: url("../img/cubered.png"); 
     width: 25px;
    height: 25px;
    transition-duration:2.5s;
@@ -204,7 +201,7 @@
     transform: rotate(160deg);
 }
 .fallingCubewhite {
-    background-image: url("http://i65.tinypic.com/2r7bl9w.png"); 
+    background-image: url("../img/cubewhite.png"); 
     width: 25px;
    height: 25px;
    transition-duration:2.5s;
@@ -212,7 +209,7 @@
     transform: rotate(160deg);
 }
 .fallingCubeyellow{
-    background-image: url("http://i63.tinypic.com/a0ic8p.png"); 
+    background-image: url("../img/cubeyellow.png"); 
     width: 25px;
    height: 25px;
    transition-duration:2.5s;
@@ -225,7 +222,7 @@
 
 #FunnyBackgroundrecover{
   position: absolute;
-  background-image: url("http://i63.tinypic.com/25imczq.jpg");
+  background-image: url("../img/registerstar.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
@@ -242,7 +239,7 @@
 }
 #FunnyBackgroundExplode{
   position: absolute;
-  background-image: url("http://i63.tinypic.com/jtqwiw.png");
+  background-image: url("../img/the boom.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
@@ -293,13 +290,14 @@ div[class*="col"] {
 }
 
 .tutorial {
-  background-image: url("http://i63.tinypic.com/1zgdmyr.png");
+ background: -webkit-linear-gradient(left, #1e5799 1%,#1e5799 1%,#1e5799 13%,#2989d8 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
   background-color: transparent;
   border: 1px solid;
   padding: 10px;
   box-shadow: 9px -1px;
   position: absolute;
   align-content: center;   
+  text-align: center;
   top: 70px;
   left: 25vw;
   right: 5vw;
@@ -578,5 +576,5 @@ div[class*="col"] {
 }
 
 #registerstar {
-    background-image: url("Assets/registerstar.png");
+    
 }

@@ -690,7 +690,7 @@ case 6:
    
 
     
-function animatebackground () {
+/*function animatebackground () {
     
     function randomMadness() {
          var randomConvination = Math.floor((Math.random() * 800) + 1)
@@ -725,7 +725,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    randomness1,0,20)
+    randomness1,0,20);
 
      $$('#fallingCubes2red5')
     .animate(
@@ -743,7 +743,8 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
+    
      $$('#fallingCubes3green3')
     .animate(
         {
@@ -760,7 +761,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
      $$('#fallingCubes4yellow2')
     .animate(
@@ -778,7 +779,8 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
+    
      $$('#fallingCubes5white4')
     .animate(
         {
@@ -795,7 +797,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
      $$('#fallingCubes6orange6')
     .animate(
@@ -813,7 +815,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
     
     
@@ -836,7 +838,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    randomness1)
+    randomness1);
 
      $$('#fallingCubes2red6')
     .animate(
@@ -854,7 +856,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
      $$('#fallingCubes3green4')
     .animate(
         {
@@ -871,7 +873,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
      $$('#fallingCubes4yellow1')
     .animate(
@@ -889,7 +891,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
      $$('#fallingCubes5white6')
     .animate(
         {
@@ -906,7 +908,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
      $$('#fallingCubes6orange2')
     .animate(
@@ -981,7 +983,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
      $$('#fallingCubes4yellow3')
     .animate(
@@ -999,7 +1001,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
      $$('#fallingCubes5white1')
     .animate(
         {
@@ -1016,7 +1018,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
      $$('#fallingCubes6orange3')
     .animate(
@@ -1034,7 +1036,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
       $$('#fallingCubes4yellow4')
     .animate(
         {
@@ -1051,7 +1053,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
       $$('#fallingCubes3green1')
     .animate(
         {
@@ -1068,7 +1070,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
       $$('#fallingCubes3green2')
     .animate(
         {
@@ -1085,7 +1087,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
        $$('#fallingCubes2red4')
     .animate(
         {
@@ -1102,7 +1104,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
    $$("#fallingCubes4yellow5")
     .animate(
         {
@@ -1119,7 +1121,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
   
    $$("#fallingCubes5white2").animate(
         {
@@ -1136,9 +1138,25 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
-    var cube20 =  $$("#fallingCubes5white5") 
+     $$("#fallingCubes5white5").animate(
+        {
+          'margin-right': randomness1,
+            'margin-left': randomness2,
+            'margin-top': randomness3,
+            'margin-bottom': randomness4
+        },
+    ).delay(1000)
+    .animate(
+        {
+           'margin-right': randomness1,
+            'margin-left': randomness2,
+            'margin-top': randomness3,
+            'margin-bottom': randomness4
+        },
+    );
+    
      $$("#fallingCubes5white2").animate(
         {
           'margin-right': randomness1,
@@ -1154,7 +1172,8 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
+    
     $$("#fallingCubes5white3").animate(
         {
           'margin-right': randomness1,
@@ -1170,7 +1189,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
       $$("#fallingCubes2red1").animate(
         {
           'margin-right': randomness1,
@@ -1186,7 +1205,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
      $$("#fallingCubes2red2").animate(
         {
           'margin-right': randomness1,
@@ -1202,7 +1221,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
      $$("#fallingCubes6orange4").animate(
         {
           'margin-right': randomness1,
@@ -1218,7 +1237,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
      $$("#fallingCubes3green5").animate(
         {
           'margin-right': randomness1,
@@ -1234,7 +1253,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
      $$("#fallingCubes6orange1").animate(
         {
           'margin-right': randomness1,
@@ -1250,7 +1269,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
      $$("#fallingCubes6orange5").animate(
         {
           'margin-right': randomness1,
@@ -1266,7 +1285,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
       $$("#fallingCubes1blue4").animate(
         {
           'margin-right': randomness1,
@@ -1282,7 +1301,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
         $$("#fallingCubes1blue5").animate(
         {
           'margin-right': randomness1,
@@ -1298,7 +1317,7 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
     
      $$("#fallingCubes4yellow6").animate(
         {
@@ -1315,10 +1334,10 @@ console.log(randomness4);
             'margin-top': randomness3,
             'margin-bottom': randomness4
         },
-    )
+    );
 }
 
-animatebackground ()
+animatebackground ();
     
     
 function backgroundRecover() {
@@ -1386,7 +1405,7 @@ $$("#FunnyBackgroundrecover").on("click", function() {
        
    }); 
     
-    
+    */
     
     
     
@@ -1407,16 +1426,7 @@ $$("#FunnyBackgroundrecover").on("click", function() {
   .animate({top:0},vertic).join('FallingCubesDown')
   ._.dequeue('FallingCubesDown');*/
 
- 
 
-$$('#fallingCube1').repeat(15).animate(
-    {bo: '100'}
-    );
-
-
-
-$$('#cubeTitle').repeat(1000)
-  .each($$).toggleClass('bold').wait(50);
 
 
 

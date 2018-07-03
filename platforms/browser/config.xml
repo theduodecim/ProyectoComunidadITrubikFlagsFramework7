@@ -15,5 +15,16 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <access origin="http://i65.tinypic.com/sytlop.png" subdomains="false" />
+    <access origin="https://www.filterforge.com/upload/forum/upload/44d/Cuberism%20Qbert%20multicolor.jpg" subdomains="false" />
+    <access origin="http://i66.tinypic.com/vgygy.jpg" subdomains="false" />
+    <access origin="http://i66.tinypic.com/fmho2r.png" subdomains="false" />
+    <access origin="http://i66.tinypic.com/2w39bbt.png" subdomains="false" />
+    <access origin="http://i63.tinypic.com/5l2zb6.png" subdomains="false" />
+    <access origin="http://i68.tinypic.com/a4204l.png" subdomains="false" />
+    <access origin="http://i65.tinypic.com/2r7bl9w.png" subdomains="false" />
+    <access origin="http://i63.tinypic.com/a0ic8p.png" subdomains="false" />
+    <access origin="http://i63.tinypic.com/25imczq.jpg" subdomains="false" />
+    <access origin="http://i63.tinypic.com/jtqwiw.png" subdomains="false" />
     <preference name="DisallowOverscroll" value="true" />
 </widget>
