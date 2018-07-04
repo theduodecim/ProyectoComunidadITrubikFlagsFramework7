@@ -23,7 +23,8 @@ var $$ = $;
 
 
 // VARIABLES GLOBALES
-var panelurl = "https://restcountries.eu/rest/v2/"
+var firebase;
+var panelurl = "https://restcountries.eu/rest/v2/";
 var pick = "";
 var flagName = "";
 var flagDescription = "";

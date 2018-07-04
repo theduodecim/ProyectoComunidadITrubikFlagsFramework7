@@ -302,7 +302,7 @@ div[class*="col"] {
 }
 
 .tutorial {
- background: -webkit-linear-gradient(left, #1e5799 1%,#1e5799 1%,#1e5799 13%,#2989d8 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-linear-gradient(left, #1e5799 1%,#1e5799 1%,#1e5799 13%,#2989d8 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
   background-color: transparent;
   border: 1px solid;
   padding: 10px;
@@ -544,7 +544,7 @@ div[class*="col"] {
   margin-bottom: 15px;
   font-size: 10px;
   padding-left: 5%;
-   word-break:break-all;
+  word-break:break-all;
 }
 
 .flagimg {

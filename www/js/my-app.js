@@ -23,15 +23,15 @@ var $$ = $;
 
 
 // VARIABLES GLOBALES
-var panelurl = "https://restcountries.eu/rest/v2/"
+var panelurl = "https://restcountries.eu/rest/v2/";
 var pick = "";
 var flagName = "";
 var flagDescription = "";
 var flagDescriptionText = "";
 var flagImage;
 var ENG = false;
-var email;
-var password;
+var email = "";
+var password = "";
 var newEmail;
 var newPassword;
  var  url = panelurl;
@@ -233,11 +233,12 @@ $$(document).on('deviceready', function() {
  console.log(ENG);
  
 
- 
+
+ $$("#ENG").val( "Lenguaje " + "\n"  + "a Ingles");
  $$("#ENG").on("click", function() {
-     
-     
-     
+
+ 
+
      
      if ($$('.picker-modal.modal-in').length > 0) {
     myApp.closeModal('.picker-modal.modal-in');
@@ -265,6 +266,7 @@ $$(document).on('deviceready', function() {
       ENG = true;
       console.log(ENG);
       if(ENG == true) {
+    $$("#clean").text("Some time to explore" + "\n" + "you need to clean" +"\n" + "your cubes" + "\n" + "pressing the star" + "\n" + "Botton above");      
      $$("#tutorialQuote").text("It's time to explore the world with Rubik's Cube Flags");
      $$("#tutorialInstruction").text("First Press the Cube and Get the your colors of the day!." + "\n" + "Seccond, Now you got the colors press the Explore" + "to know more about your new Flag!");
      $$("#leftpanelnews").text("News");
@@ -715,7 +717,7 @@ function backgroundAnimate() {
 }, 'slow', function () { $(this).removeAttr('style'); });
 
  function randomMadness1() {
-         var randomConvination = Math.floor((Math.random() * 200) + 1);
+         var randomConvination = Math.floor((Math.random() * 600) + 1);
          console.log("random RGWflagWorking");
          return randomConvination;
       }
@@ -772,12 +774,9 @@ var cube35 = $$("#fallingCubes4yellow6");
  $$([cube1,cube2,cube3,cube4,cube5,cube6,cube7,cube8,cube9,cube10,cube11,cube12,cube13,cube14,cube15,cube16,cube17,
  cube18,cube19,cube20,cube21,cube22,cube23,cube24,cube25,cube26,cube27,cube28,cube29,cube30,cube31,cube32,cube33,cube34,cube35]).each(function(
      ){
-         $$(this).repeat(40).animate(
+         $$(this).animate(
         {   
-            'margin-right': randomness1,
-            'margin-left': randomness2,
             'margin-top': randomness3,
-            'margin-bottom': randomness4,
         });
      });
 }
@@ -880,45 +879,37 @@ $$(document).on('pageInit', function (e) {
      if (page.name === 'firebaseauthpage') {
    // Following code will be executed for page with data-page attribute equal to "about"
      
-      firebase.auth().onAuthStateChanged(function(user) {
-     if (user) {
-    // User is signed in.
-        console.log("yeahh you logged in to the nasa");
-    // ...
-  } else {
-    // User is signed out.
-    // ...
-  }
-   });
-     
+ 
   $$("#SignIn").on("click", function() {
         email = $$("#email").val();
         password = $$("#password").val();
         firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         var errorCode = error.code;
          var errorMessage = error.message;
-  })
-     alert("You Are logged with :" + email );
-     window.location = "index.html";
+  });
+     
+   firebase.auth().onAuthStateChanged(function(user) {
+     if (user) {
+    // User is signed in.
+      alert("You Are logged with :" + email );
+    // ...
+  } else {
+                 alert("wrong ids");
+    // ...
+  }
+   });
 });
+
 }
-})
+});
+
+
    $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
      if (page.name === 'firebaseauthpageSignUp') {
    // Following code will be executed for page with data-page attribute equal to "about"
-     
-      firebase.auth().onAuthStateChanged(function(user) {
-     if (user) {
-    // User is signed in.
-        console.log("yeahh you logged in to the nasa");
-    // ...
-  } else {
-    // User is signed out.
-    // ...
-  }
-   });
+   
      
   $$("#createAcc").on("click", function() {
         newEmail = $$("#newEmail").val();
@@ -929,8 +920,22 @@ $$(document).on('pageInit', function (e) {
          var errorMessage = error.message;
           // ...
         });
-      alert("Successful Accound Created Your Username is : " + newEmail + "And your password is : " + newPassword);
-      window.location = "index.html";
+     
+     
+     firebase.auth().onAuthStateChanged(function(user) {
+     if (user) {
+    /*window.location = "index.html";*/
+    console.log("yeahh you create an account in to the nasa");
+    alert(" Successful Accound Created Your Username is  : " + "\n" + newEmail + " And your password is : " + newPassword);
+    // ...
+  } else {
+    alert("something Goes Wrong");
+    // ...
+  }
+   });
+      
+      
+      
 });
 }
 })    

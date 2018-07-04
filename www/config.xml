@@ -16,8 +16,6 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
     <allow-intent href="https://restcountries.eu/rest/v2/" value="true" />
     <allow-intent href="https://www.patreon.com/bePatron?c=1798557" value="true" />
     <allow-navigation href="*" />
@@ -107,12 +105,6 @@
     </platform>
     <platform name="windows">
     </platform>
-    <platform name="browser">
-        <preference name="SplashScreen" value="img/splashscreen.png" />
-        <preference name="SplashScreenDelay" value="10000" />
-        <preference name="ShowSplashScreen" value="false" />
-        <preference name="SplashScreenWidth" value="600" />
-        <preference name="SplashScreenHeight" value="300" />
     </platform>
     <plugin name="cordova-plugin-splashscreen" spec="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
