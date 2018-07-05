@@ -11,13 +11,16 @@
 */
 
 .page-content {
-    background-image: url("../img/rubicksbackground spash screen.png");
-    background-size: cover;
+    background-image: url("../img/TheBackground4.jpg");
+    background-size: contain;
+   background-position: 35% 35%;  
+   background-size: cover;  
     align-content: center; 
+    /* Sets reference point to scale from */
 }
 
 .navbar-inner {
-   background: -webkit-linear-gradient(left, #1e5799 1%,#1e5799 1%,#1e5799 13%,#2989d8 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to right, #d5cea6 0%,#c9c190 36%,#c9c190 48%,#b7ad70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .panel {
  background-image: url("../img/rubicksbackground resize 1.png");
@@ -302,7 +305,7 @@ div[class*="col"] {
 }
 
 .tutorial {
-  background: -webkit-linear-gradient(left, #1e5799 1%,#1e5799 1%,#1e5799 13%,#2989d8 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #d5cea6 0%,#c9c190 36%,#c9c190 48%,#b7ad70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-color: transparent;
   border: 1px solid;
   padding: 10px;
@@ -501,42 +504,82 @@ div[class*="col"] {
    background-size: cover !important;
 }
 
+#registerstar {
+    color: white;
+     background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet); /* Standard syntax (must be last) */
+    position: relative;
+    background-size: cover;
+    font-size: 20px;
+    border-radius: 40px;
+}
 
+#alertinfo {
+    background-color: transparent;
+    width: 30px;
+}
 
-
+#clean{
+   color: red;
+   font-size: 10px;
+}
+#cleanspan {
+    position: absolute;
+    left: 80vw;
+    top: 120px;
+}
 
 
 /* page2 */
 .flagsColorspage2 {
   position: relative;
-  align-content: center;    
+  align-content: center; 
+ background-color: transparent;
+  background-color: transparent;
+  align-content: center;
   top: 10vw;
-  left: 6vw;
-  right: 50vw;
-  width: 80vw;
-  border-style: dotted;
-  background: #fff;
-  text-align: center;
-  color: #000;
-  border: 1px solid #ddd;
-  padding: 5px;
-  margin-bottom: 15px;
-  font-size: 12px;
+  height: 100px;
+}
+#flagbutton1 {
+    position: absolute;
+  top: 10vw;
+   left: 50%;
+   width: 80px;
+   height: 85px;
+   border-radius: 100%;
+   background-size: cover; 
 }
 
-.flagbuttonpage2 {
-   width: 60px;
-   height: 55px;
+#flagbutton2 {
+   position: absolute;
+   top: 10vw;
+   left: 15%;
+   width: 80px;
+   height: 85px;
    border-radius: 100%;
+   background-size: cover; 
+}
+#flagbutton3 {
+   position: absolute;
+    top: 10vw;
+   left: 85%;
+   width: 80px;
+   height: 85px;
+   border-radius: 100%;
+   background-size: cover; 
 }
 
 .flagdescription {
+  background: linear-gradient(to right, #cccccc 20%,#eeeeee 39%,#cccccc 59%,#cccccc 73%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background-color: transparent;
   position: relative;
   top: 25vw;
   left: 10vw;
   right: 20vw;
   border-style: dotted;
-  background: #fff;
   text-align: center;
   color: #000;
   border: 1px solid #ddd;
@@ -576,6 +619,7 @@ div[class*="col"] {
 }
 
 /* page 3 */
+
 #SignIn {
     position: relative;
     left: 25vw;
@@ -587,6 +631,10 @@ div[class*="col"] {
     width: 50%;
 }
 
-#registerstar {
-    
+.registerBackground {
+   background: linear-gradient(to right, #d5cea6 0%,#c9c190 40%,#b7ad70 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+  width: 100%;
+  height: 100%;
 }
+
+

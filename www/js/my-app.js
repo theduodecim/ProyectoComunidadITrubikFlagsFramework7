@@ -29,6 +29,9 @@ var flagName = "";
 var flagDescription = "";
 var flagDescriptionText = "";
 var flagImage;
+var flagImgcircle1;
+var flagImgcircle2;
+var flagImgcircle3;
 var ENG = false;
 var email = "";
 var password = "";
@@ -393,6 +396,18 @@ case 6:
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
+                                            flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://c1.staticflickr.com/8/7390/13911014358_66b30a21b5_b.jpg)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/d/d2/Coat_of_arms_of_Amazonas_State.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://c1.staticflickr.com/3/2934/14018106379_9f63523889_z.jpg)");
                                             console.log(flagDescription);
                                             if(ENG == true) {
                                             console.log("rgbflag1");
@@ -868,6 +883,9 @@ $$(document).on('pageInit', function (e) {
       $$("#flagNamePage2").text(flagName);
       $$("#textdescription").text(flagDescriptionText);
       $$(flagImage).appendTo("#flagimg2");
+      $$(flagImgcircle1).appendTo(".flagsColorspage2");
+      $$(flagImgcircle2).appendTo(".flagsColorspage2");
+      $$(flagImgcircle3).appendTo(".flagsColorspage2");
     }
     
 })
@@ -877,41 +895,44 @@ $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
      if (page.name === 'firebaseauthpage') {
+         
+         
+         
    // Following code will be executed for page with data-page attribute equal to "about"
-     
- 
-  $$("#SignIn").on("click", function() {
-        email = $$("#email").val();
-        password = $$("#password").val();
-        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-        var errorCode = error.code;
-         var errorMessage = error.message;
-  });
-     
-   firebase.auth().onAuthStateChanged(function(user) {
-     if (user) {
-    // User is signed in.
-      alert("You Are logged with :" + email );
-    // ...
-  } else {
-                 alert("wrong ids");
-    // ...
-  }
-   });
-});
-
+ function SignIn() {
+      email = $$("#email").val();
+      password = $$("#password").val();
+      firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      alert("Error" + errorMessage);
+    });
 }
+
+  $$("#SignIn").on("click", function() {
+      SignIn();
+    });
+    
+    
+    
+   
+    
+    }
 });
-
-
+         
+        
    $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
      if (page.name === 'firebaseauthpageSignUp') {
    // Following code will be executed for page with data-page attribute equal to "about"
    
-     
-  $$("#createAcc").on("click", function() {
+   
+   
+   
+   
+  function createAcc () {   
+ 
         newEmail = $$("#newEmail").val();
         newPassword = $$("#newPassword").val();
         firebase.auth().createUserWithEmailAndPassword(newEmail, newPassword).catch(function(error) {
@@ -920,25 +941,19 @@ $$(document).on('pageInit', function (e) {
          var errorMessage = error.message;
           // ...
         });
-     
-     
-     firebase.auth().onAuthStateChanged(function(user) {
-     if (user) {
-    /*window.location = "index.html";*/
-    console.log("yeahh you create an account in to the nasa");
-    alert(" Successful Accound Created Your Username is  : " + "\n" + newEmail + " And your password is : " + newPassword);
-    // ...
-  } else {
-    alert("something Goes Wrong");
-    // ...
-  }
+ 
+   $$("#createAcc").on("click", function() {
+       createAcc();
    });
-      
-      
-      
-});
 }
-})    
+
+
+
+
+
+
+}
+});    
       
       
       
