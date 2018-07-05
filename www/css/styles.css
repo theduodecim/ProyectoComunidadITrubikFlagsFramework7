@@ -363,7 +363,7 @@ div[class*="col"] {
 }
 #flagname{
   position: absolute;
-  background-color: grey;
+  background: linear-gradient(to right, red, orange, yellow, green, blue, white);
   top: 375px;
   left: 65vw;
   text-align: center;

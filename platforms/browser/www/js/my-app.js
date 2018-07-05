@@ -63,11 +63,11 @@ var akiruno = "Akiruno es una ciudad situada" + "en la Prefectura de Tokio, Jap�
 "En 2008, la ciudad tenía una población estimada de 81.475 habitantes y una densidad de población de 1.084,63 personas por km². El área total es 73.34 km²." +
 "La ciudad fue fundada el 1 de septiembre de 1995.";
  
-var arukinoEn = "Akiruno (あきる野市 Akiruno-shi) is a city located in the western portion of Tokyo Metropolis, Japan. As of 1 February 2016," + 
+var arukinoEn = "Akiruno (Akiruno-shi) is a city located in the western portion of Tokyo Metropolis, Japan. As of 1 February 2016," + 
    "the city had an estimated population of 80,464, and a population"+
    "density of 1100 persons per km². Its total area is 73.47 square kilometres (28.37 sq mi)";
   
- var cukarica= "Čukarica (en cirílico serbio: Чукарица) es un barrio y uno de los 17 municipios de Belgrado, la capital de Serbia." + 
+ var cukarica= "Čukarica es un barrio y uno de los 17 municipios de Belgrado, la capital de Serbia." + 
   "Cubre 155 km² y tiene terrotirios tanto urbanos como suburbanos, situándose los primeros en la ciudad de Belgrado propiamente dicha. " + 
   "En el denso de 2002 registró 168.508 habitantes, estimándose su población en 175.057 personas al 31 de diciembre de 2005." +
   "Es la segunda municipalidad más poblada, después de Novi Beograd, pero la que registra el mayor crecimiento demográfico (cerce del 1% anual)." +
@@ -137,7 +137,7 @@ var BoyacáEn = "Boyacá (Spanish pronunciation: [boʝaˈka]) is one of the thir
 "although the western end of the department extends to the Magdalena River at the town of Puerto Boyacá." +
 "Boyacá borders to the north with the Department of Santander, to the northeast with the Bolivarian Republic of Venezuela and Norte de Santander," + 
 "to the east with the departments of Arauca and Casanare. To the south, Boyacá borders the department of Cundinamarca and to the west with the Department" + 
-"of Antioquia covering a total area of 23,189 square kilometres (8,953 sq mi).[2] The capital of Boyacá is the city of Tunja." + 
+"of Antioquia covering a total area of 23,189 square kilometres (8,953 sq mi). The capital of Boyacá is the city of Tunja." + 
 "Boyacá is known as \"The Land of Freedom\" because this region" + 
 "was the scene of a series of battles which led to Colombia's independence from Spain." + 
 "The first one took place on 25 July 1819 in the Pantano de Vargas and the final and decisive battle known as the Battle" + 
@@ -147,14 +147,39 @@ var BoyacáEn = "Boyacá (Spanish pronunciation: [boʝaˈka]) is one of the thir
 "and the Saint Thomas Aquinas University" 
  
  
+var sriLanka = "Sri Lanka (de forma oficial, la República Democrática Socialista de Sri Lanka), Sri Lankā Prajathanthrika Samajavadi Janarajaya; es un país soberano insular de Asia, ubicado en pleno golfo de Bengala, cuya forma de gobierno es la república semipresidencialista. Su territorio está organizado en nueve provincias y veinticuatro distritos." +
+"La isla fue conocida en la Antigüedad como «Lanka», «Lankadvīpa», «Simoundou», «Taprobane», «Serendib» y «Selan», llegando a ser denominada popularmente como la «isla de los mil nombres». Durante su colonización, la isla tomó el nombre de «Ceilán», que se siguió utilizando posteriormente. Su particular forma y su cercanía a la India hicieron que se la llame «La lágrima de la India»." +
+"Debido a su ubicación en el camino de las principales rutas marítimas, Sri Lanka es un vínculo naval estratégico entre el Asia occidental y el sudeste asiático, y ha sido un centro de la religión y la cultura budista de la antigüedad. Hoy en día es un país multirreligioso y multiétnico, en el que casi un tercio de la población es seguidor de religiones distintas del budismo, en especial el hinduismo, el cristianismo y el islam. La comunidad cingalesa es la mayoritaria. Los tamiles, que se concentran en el norte y el este de la isla, constituyen la minoría étnica más importante. Otras comunidades incluyen los musulmanes árabes, malayos y los burghers." +
+"Famosa por la producción y exportación de canela, té, café, caucho y coco, Sri Lanka cuenta con una progresiva y moderna economía industrial y el más alto ingreso per cápita en el Asia meridional. La belleza natural de Sri Lanka en sus bosques tropicales, playas y paisaje, así como su rico patrimonio cultural, la convierten en un destino turístico de fama mundial." +
+"Después de más de dos mil años de gobiernos locales por reinos, partes de Sri Lanka fueron colonizadas por Portugal y los Países Bajos a partir del siglo XVI, antes de que el control de todo el país fuera cedido al Imperio británico en 1815. Durante la Segunda Guerra Mundial, Sri Lanka sirvió como una base importante para las fuerzas aliadas en la lucha contra el Imperio japonés. Un movimiento político nacionalista surgió en el país a principios del siglo XX, con el fin de obtener la independencia política, que fue finalmente concedida por los británicos después de las negociaciones de paz en 1948." +
+"La historia de Sri Lanka ha estado marcada durante más de dos décadas por un conflicto étnico entre el gobierno nacional y el movimiento insurgente de los Tigres de Liberación del Eelam Tamil. A inicios de 2002, los dos bandos en conflicto acordaron un alto al fuego, el cual fue roto en reiteradas oportunidades por ambas partes. A principios de 2009, el gobierno nacional inició una ofensiva contra los Tigres, que duró varios meses y resultó en la aniquilación de la guerrilla y la muerte de sus altos mandos, pero a un altísimo costo de vidas civiles."
+ 
+var sriLankaEn = " Sri Lanka, officially the Democratic Socialist Republic of Sri Lanka, is an island country in South Asia, located in the Indian Ocean to the southwest of the Bay of Bengal and to the southeast of the Arabian Sea. It is separated from the Indian subcontinent by the Gulf of Mannar and the Palk Strait. The legislative capital, Sri Jayawardenepura Kotte, is a suburb of the commercial capital and largest city, Colombo." + 
+"Sri Lanka's documented history spans 3,000 years, with evidence of pre-historic human settlements dating back to at least 125,000 years. It has a rich cultural heritage and the first known Buddhist writings of Sri Lanka, the Pāli Canon, date back to the Fourth Buddhist council in 29 BC. Its geographic location and deep harbours made it of great strategic importance from the time of the ancient Silk Road through to the modern Maritime Silk Road." +
+"Sri Lanka was known from the beginning of British colonial rule as Ceylon. A nationalist political movement arose in the country in the early 20th century to obtain political independence, which was granted in 1948; the country became a republic and adopted its current name in 1972. Sri Lanka's recent history has been marred by a 30-year civil war, which decisively ended when the Sri Lanka Armed Forces defeated the Liberation Tigers of Tamil Eelam (LTTE) in 2009." +
+"The current constitution stipulates the political system as a republic and a unitary state governed by a semi-presidential system. It has had a long history of international engagement, as a founding member of the South Asian Association for Regional Cooperation (SAARC), and a member of the United Nations, the Commonwealth of Nations, the G77, and the Non-Aligned Movement. Along with the Maldives, Sri Lanka is one of only two South Asian countries rated *high* on the Human Development Index (HDI), with its HDI rating and per capita income the highest among South Asian nations. Sri Lankan constitution accords Buddhism the *foremost place*, although it does not identify it as a state religion. Buddhism is given special privileges in the Sri Lankan constitution." + 
+"The island is home to many cultures, languages and ethnicities. The majority of the population is from the Sinhalese ethnicity, while a large minority of Tamils have also played an influential role in the island's history. Moors, Burghers, Malays, Chinese, and the aboriginal Vedda are also established groups on the island."
  
  
+var cuzco = "Cuzco (en quechua sureño: Qusqu o Qosqo, pronunciado) es una ciudad del sureste del Perú ubicada en la vertiente oriental de la cordillera de los Andes, en la cuenca del río Huatanay, afluente del Vilcanota. Es la capital del departamento del Cuzco y, además, según está declarado en la constitución peruana, es la «capital histórica» del país. " +
+"La ciudad de Cuzco, según el Instituto Nacional de Estadística e Informática, es la octava ciudad más poblada de Perú, y albergaba, en 2014, una población de 420 137 habitantes." +
+"Plaza de armas, desde Saqsayhuamán." +
+"Antiguamente fue la capital del Imperio inca, una de las ciudades más importantes del Virreinato del Perú, en cuya época, y en manos de los españoles, se engalanó de iglesias, palacios y plazas barrocas y neoclásicas, que es lo que hoy le convierten en el principal lugar turístico de Perú. Declarada Patrimonio de la Humanidad en 1983 por la Unesco, suele ser denominada, debido a la gran cantidad de monumentos que posee, la *Roma de América*";
+
+var cuscoEn = "Cusco (Spanish: Cuzco, kusko; Quechua: Qusqu or Quechua: Qosqo), often spelled Cuzco, is a city in southeastern Peru, near the Urubamba Valley of the Andes mountain range. It is the capital of the Cusco Region and of the Cusco Province. In 2013, the city had a population of 435,114. Located on the eastern end of the Knot of Cuzco, its elevation is around 3,400 m (11,200 ft)." +
+"The site was the historic capital of the Inca Empire from the 13th until the 16th-century Spanish conquest. In 1983 Cusco was declared a World Heritage Site by UNESCO. It has become a major tourist destination, hosting nearly 2 million visitors a year. The Constitution of Peru designates it as the Historical Capital of Peru.[2] In 1983 Cusco was designated as a World Heritage Site by UNESCO with the title *City of Cuzco*";
  
+var IrelandEn = "Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the third-largest island in Europe." +
+"Politically, Ireland is divided between the Republic of Ireland (officially named Ireland), which covers five-sixths of the island, and Northern Ireland, which is part of the United Kingdom. In 2011, the population of Ireland was about 6.6 million, ranking it the second-most populous island in Europe after Great Britain. Just under 4.8 million live in the Republic of Ireland and just over 1.8 million live in Northern Ireland." +
+"The island's geography comprises relatively low-lying mountains surrounding a central plain, with several navigable rivers extending inland. Its lush vegetation is a product of its mild but changeable climate which is free of extremes in temperature. It was covered by thick woodlands until the Middle Ages. As of 2013, the amount of land that is wooded in Ireland is about 11% of the total, compared with a European average of 35%. There are twenty-six extant mammal species native to Ireland. The Irish climate is influenced by the Atlantic Ocean and thus very moderate, and winters are milder than expected for such a northerly area, although summers are cooler than those in Continental Europe. Rainfall and cloud cover are abundant.";
  
- 
- 
- 
- 
+var Ireland = "Irlanda  oficialmente la República de Irlanda (en irlandés: Poblacht na hÉireann; en inglés: Republic of Ireland) para diferenciarla de Irlanda del Norte,​ es un país soberano, miembro de la Unión Europea, que ocupa la mayor parte de la isla homónima. Su capital es Dublín, situada en el este de la isla. " +
+"El país tiene una única frontera terrestre, con Irlanda del Norte, una de las naciones constitutivas del Reino Unido. " +
+"La isla está rodeada por el océano Atlántico y tiene el mar Céltico al sur, el canal de San Jorge al sureste y el mar de Irlanda al este. Es una república parlamentaria con un presidente electo que ejerce de jefe de Estado. El jefe del gobierno, el Taoiseach, es nombrado por la Cámara Baja del Parlamento, la Dáil Éireann." +
+"El moderno Estado irlandés consiguió su independencia efectiva del Reino Unido en 1922, tras una guerra de independencia que acabó con la firma del Tratado anglo-irlandés, mientras que Irlanda del Norte optó por permanecer en el Reino Unido. Fue cuando se inició el Conflicto de Irlanda del Norte, que aún perdura. Aunque en principio Irlanda fue un dominio dentro del Imperio británico, con el nombre de Estado Libre Irlandés, en 1931 se clarificó su completa independencia legislativa y en 1937 adoptó una nueva constitución y el nombre de Irlanda. En 1949 se eliminaron los deberes restantes de la figura del rey de Irlanda y el país se declaró una república. El Estado no tuvo relaciones formales con Irlanda del Norte durante la mayor parte del siglo xx, " +
+"pero desde 1999 han cooperado en varias políticas en el marco del Consejo Ministerial Norte-Sur creado por el Acuerdo de Viernes Santo.";
+
+
  
 var flagsRgbLenght4Test = ["Akiruno","Amazonas (Venezuela)","Cukarica"];
 var flagsRgb = [
@@ -167,6 +192,7 @@ var flagsRgw = [
     "Somaliland","Santo Domingo","Heligoland","Groningen","Kuwait","Bulgaria Naval Ensign","Northern Province, Sri Lanka","Mexico",
     "Turkmenistan"
     ];
+var flagsRgoLenghtTest = ["Sri Lanka","Cusco","Ireland"];
 var flagsRgo = [
     "Sri Lanka", "Cusco","Zambia", "Ireland","Zambia"
     ];
@@ -274,7 +300,7 @@ $$(document).on('deviceready', function() {
      $$("#tutorialInstruction").text("First Press the Cube and Get the your colors of the day!." + "\n" + "Seccond, Now you got the colors press the Explore" + "to know more about your new Flag!");
      $$("#leftpanelnews").text("News");
      $$("#leftpanelquote").text("Which place of the world you are going visit today?");
-     $$("#leftpanelinformation").text("If you donate 5 US$ or more," +
+     $$("#leftpanelinformation").text("If you donate 1 US$ or more," +
           "you can ask us us to update the database with" + " " +
           "5 of your favorite flags, if they are not yet in the database." +
           "After the donation, send the list of chosen flags to rubiksflags@gmail.com");
@@ -336,7 +362,7 @@ $$("#donation").on("click", function() {
     
     
     function randomConvinationFunction() {
-    var randomConvination = Math.floor((Math.random() * 2) + 1)
+    var randomConvination = Math.floor((Math.random() * 3) + 1)
      console.log(randomConvination)
     return randomConvination;
 }
@@ -429,6 +455,18 @@ case 6:
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
+                                            flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/9/9a/Otsu%2C_Akiruno%2C_Tokyo_190-0174%2C_Japan_-_panoramio_%282%29.jpg)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hirasawa%2C_Akiruno%2C_Tokyo_197-0812%2C_Japan_-_panoramio.jpg/800px-Hirasawa%2C_Akiruno%2C_Tokyo_197-0812%2C_Japan_-_panoramio.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Deep_Bowl_from_Ushinuma%2C_Akiruno-shi%2C_Tokyo%2C_Jomon_period%2C_3000-2000_BC_-_Tokyo_National_Museum_-_DSC05623.JPG/400px-Deep_Bowl_from_Ushinuma%2C_Akiruno-shi%2C_Tokyo%2C_Jomon_period%2C_3000-2000_BC_-_Tokyo_National_Museum_-_DSC05623.JPG)");
                                             console.log(flagDescription);
                                             if(ENG == true) {
                                             console.log("rgbflag2ENG working");
@@ -450,7 +488,20 @@ case 6:
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
+                                            flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/e/ef/Cukarica_coa.jpg)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sv_Petka_Padina.jpg/600px-Sv_Petka_Padina.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/a/a1/Zlatibor-vazdu%C5%A1na_banja_006.jpg)");
                                             console.log(flagDescription);
+                                          
                                             if(ENG == true) {
                                             console.log("rgbflag3");
                                             flagName = $$("#flagname").text("Cukarica");
@@ -485,13 +536,29 @@ case 6:
                                         case 1:
                                             console.log("rgwflag1");
                                             console.log("Żebbuġ");
-                                            flagName = $$("#flagname").text("Żebbuġ");
+                                            flagName = $$("#flagname").text("Żebbuġ Gozo");
                                             flagDescription = $$("<p>").text(Żebbuġ);
                                             flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_%C5%BBebbu%C4%A1%2C_Gozo.svg/500px-Flag_of_%C5%BBebbu%C4%A1%2C_Gozo.svg.png")
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
                                             console.log(flagDescription);
+                                             flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://s.iha.com/1799100025806/bb-Zebbug-Vecchio-Mulino-B-B_25.jpeg)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Malta_-_Zebbug_-_Triq_Sciortino_-_Dun_Karm_Psaila_02_ies.jpg/400px-Malta_-_Zebbug_-_Triq_Sciortino_-_Dun_Karm_Psaila_02_ies.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Malta_-_Zebbug_-_Vjal_il-Helsien_01_ies.jpg/800px-Malta_-_Zebbug_-_Vjal_il-Helsien_01_ies.jpg)");
+                                            console.log(flagDescription);
+                                            
+                                            
+                                            
                                             if(ENG == true) {
                                             console.log("rgwflag1");
                                             flagName = $$("#flagname").text("Żebbuġ");
@@ -512,6 +579,18 @@ case 6:
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
+                                             flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Escudo_de_Puerto_Boyac%C3%A1.svg/626px-Escudo_de_Puerto_Boyac%C3%A1.svg.png)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Parque_Corrales_Boyac%C3%A1.JPG/800px-Parque_Corrales_Boyac%C3%A1.JPG)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://c1.staticflickr.com/6/5594/14382012619_dff918fba1_b.jpg)");
                                             console.log(flagDescription);
                                             if(ENG == true) {
                                             console.log("rgbflag2ENG working");
@@ -533,6 +612,19 @@ case 6:
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
+                                            flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/f/fc/Elephnat_Illizi_Algeria.jpg)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://cdn.pixabay.com/photo/2017/09/28/17/00/algeria-2796203_960_720.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://c1.staticflickr.com/6/5594/14382012619_dff918fba1_b.jpg)");
+                                            
                                             console.log(flagDescription);
                                             if(ENG == true) {
                                             console.log("rgbflag1");
@@ -549,7 +641,122 @@ case 6:
                                 };
                                 
                     break;
-                    
+        case 3:
+             console.log("RGO working");
+             /*flagsRgoLenghtTest*/
+                    $$("#flagbutton1").css(
+                        "background-color", "red");
+                         $$("#flagbutton2").css(
+                         "background-color", "green")
+                         $$("#flagbutton3").css(
+                         "background-color", "orange")
+                     function randomrgbFlagFunction() {
+                                   var randomConvination = Math.floor((Math.random() * 1) + 1) 
+                                   console.log("random RGOflagWorking");
+                                   return randomConvination;
+                                }
+                                
+                                if(randomrgbFlagFunction() != null) {
+                                     switch(randomrgbFlagFunction()) {
+                                        case 1:
+                                            console.log("rgoflag1");
+                                            console.log("sriLanka");
+                                            flagName = $$("#flagname").text("SriLanka");
+                                            flagDescription = $$("<p>").text(sriLanka);
+                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Flag_of_Sri_Lanka.svg/1024px-Flag_of_Sri_Lanka.svg.png")
+                                            .css("height", "70px")
+                                            .css("width", "145px")
+                                            .css("border-style", "inset");
+                                            console.log(flagDescription);
+                                             flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1DSznaYpQicGD3YdBMD2jW0pDwP16t6Jr7_WJnPYacptCVPGSA)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://www.goodfreephotos.com/albums/sri-lanka/buddha-statue-on-rocks-in-sri-lanka.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://c.pxhere.com/photos/b8/3e/elephants_sri_lanka_travel_wildlife_ceylon_outdoor_tourism-1376903.jpg!d)");
+                                            console.log(flagDescription);
+                                            
+                                            if(ENG == true) {
+                                            console.log("rgoflag1");
+                                            flagName = $$("#flagname").text("SriLanka");
+                                            flagDescription = $$("<p>").text(sriLankaEn);
+                                            console.log(flagDescription);
+                                            }
+                                       break;
+                                       case 2:
+                                            console.log("rgoflag2");
+                                            console.log("cusco");
+                                            flagName = $$("#flagname").text("Cuzco");
+                                            flagDescription = $$("<p>").text(cuzco);
+                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Flag_of_Cusco.svg/980px-Flag_of_Cusco.svg.png")
+                                            .css("height", "70px")
+                                            .css("width", "145px")
+                                            .css("border-style", "inset");
+                                            console.log(flagDescription);
+                                             flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Sacsayhuam%C3%A1n%2C_Cusco%2C_Per%C3%BA%2C_2015-07-31%2C_DD_24.JPG/800px-Sacsayhuam%C3%A1n%2C_Cusco%2C_Per%C3%BA%2C_2015-07-31%2C_DD_24.JPG)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Cusco-coricancha-c01.jpg/399px-Cusco-coricancha-c01.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/1/13/Chicharr%C3%B3n_Cusco_10062011.jpg)");
+                                            console.log(flagDescription);
+                                            
+                                            if(ENG == true) {
+                                            console.log("rgoflag1");
+                                            flagName = $$("#flagname").text("Cusco");
+                                            flagDescription = $$("<p>").text(cuscoEn);
+                                            console.log(flagDescription);
+                                            }
+                                       break;
+                                         case 3:
+                                            console.log("rgoflag3");
+                                            console.log("Ireland");
+                                            flagName = $$("#flagname").text("Ireland");
+                                            flagDescription = $$("<p>").text(Ireland);
+                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Flag_of_Cusco.svg/980px-Flag_of_Cusco.svg.png")
+                                            .css("height", "70px")
+                                            .css("width", "145px")
+                                            .css("border-style", "inset");
+                                            console.log(flagDescription);
+                                             flagImgcircle1 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://c.pxhere.com/photos/d9/5b/klee_shamrocks_luck_nature_lucky_charm_plant_meadow_lucky_clover-1075830.jpg!d)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://www.myirelandtour.com/images/photos/hi-res/mayo/inishturk-island/currach-fishing-boat-1.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type2","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://www.publicdomainpictures.net/pictures/260000/velka/pub-in-dublin-ireland-1527331814tZT.jpg)");
+                                            console.log(flagDescription);
+                                            
+                                            if(ENG == true) {
+                                            console.log("rgoflag1");
+                                            flagName = $$("#flagname").text("Ireland");
+                                            flagDescription = $$("<p>").text(IrelandEn);
+                                            console.log(flagDescription);
+                                            }
+                                       break;
+                                        
+                                        
+                                        
+                                     }
+                                };
+        break;                            
     };
     
     
