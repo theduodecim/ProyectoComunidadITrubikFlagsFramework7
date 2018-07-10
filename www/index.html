@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="lib/framework7/css/framework7.material.colors.min.css">
     
     
-    <link rel="stylesheet" href="css/styles.css">
+     <link rel="stylesheet" href="css/styles.css">
      <link rel="stylesheet" href="css/cubestyles.css">
 </head>
 
@@ -51,7 +51,7 @@
     <div class="panel panel-left panel-reveal">
         <div class="content-block">
           <div class="burgernav">
-           <h1 id="leftpanelnews"> Noticias </h1>
+           <h1 id="leftpanelnews"> Noticias  <a id="bonusbutton" href="bonuspage.html"> Bonus </a> </h1> 
            <h5 id="leftpanelquote">¿Que lugar del mundo te gustaría visitar Hoy?</h5>
            <h5 id="ciudad"></h5>
            <img id="icon" src="" height="60px" width="70"></img>
@@ -218,6 +218,7 @@
     <script type="text/javascript" src="lib/jquery-timing.js"></script>
     <script type="text/javascript" src="js/my-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
     <script>
   // Initialize Firebase
   var config = {
@@ -229,6 +230,7 @@
     messagingSenderId: "131404989922"
   };
   firebase.initializeApp(config);
+  var db = firebase.firestore();
     </script>
     
 </body>

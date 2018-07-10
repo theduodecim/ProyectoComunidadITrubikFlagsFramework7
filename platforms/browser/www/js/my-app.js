@@ -11,7 +11,7 @@ var myApp = new Framework7();
 /*var paper = paper;*/
 var $ 
 var $$ = $;
- 
+// Required for side-effects
 
 
 
@@ -37,6 +37,7 @@ var email = "";
 var password = "";
 var newEmail;
 var newPassword;
+var token;
  var  url = panelurl;
         $$.getJSON(url, function(request) {
             var comingrequest = request;
@@ -407,7 +408,7 @@ case 6:
                          $$("#flagbutton3").css(
                          "background-color", "green")
                              function randomrgbFlagFunction() {
-                                   var randomConvination = Math.floor((Math.random() * flagsRgbLenght4Test.length) + 1)
+                                   var randomConvination = Math.floor((Math.random() * 3) + 1)
                                    console.log("random RGBflagWorking");
                                    return randomConvination;
                                 }
@@ -527,7 +528,7 @@ case 6:
                          $$("#flagbutton3").css(
                          "background-color", "white")
                              function randomrgbFlagFunction() {
-                                   var randomConvination = Math.floor((Math.random() * flagsRgwLenght4Test.length) + 1)
+                                   var randomConvination = Math.floor((Math.random() * 3) + 1)
                                    console.log("random RGBflagWorking");
                                    return randomConvination;
                                 }
@@ -643,7 +644,6 @@ case 6:
                     break;
         case 3:
              console.log("RGO working");
-             /*flagsRgoLenghtTest*/
                     $$("#flagbutton1").css(
                         "background-color", "red");
                          $$("#flagbutton2").css(
@@ -651,7 +651,7 @@ case 6:
                          $$("#flagbutton3").css(
                          "background-color", "orange")
                      function randomrgbFlagFunction() {
-                                   var randomConvination = Math.floor((Math.random() * 1) + 1) 
+                                   var randomConvination = Math.floor((Math.random() * 3) + 1) 
                                    console.log("random RGOflagWorking");
                                    return randomConvination;
                                 }
@@ -1085,7 +1085,7 @@ myApp.onPageInit('about', function (page) {
 $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
-  if (page.name === 'Page2') {
+  if (page.name === 'Page2') {https://rubikscubeflags-duodecim.c9users.io
    // Following code will be executed for page with data-page attribute equal to "about"
       $$("#flagNamePage2").text(flagName);
       $$("#textdescription").text(flagDescriptionText);
@@ -1113,8 +1113,8 @@ $$(document).on('pageInit', function (e) {
       var errorCode = error.code;
       var errorMessage = error.message;
       alert("Error" + errorMessage);
-    });
-}
+    })
+ }
 
   $$("#SignIn").on("click", function() {
       SignIn();
@@ -1138,28 +1138,32 @@ $$(document).on('pageInit', function (e) {
    
    
    
-  function createAcc () {   
- 
+  function createAcc () { 
         newEmail = $$("#newEmail").val();
         newPassword = $$("#newPassword").val();
+     
         firebase.auth().createUserWithEmailAndPassword(newEmail, newPassword).catch(function(error) {
-          // Handle Errors here.
          var errorCode = error.code;
          var errorMessage = error.message;
-          // ...
-        });
- 
-   $$("#createAcc").on("click", function() {
+          }).then(
+        db.collection("users").add({
+         email: newEmail,
+         uid:  firebase.auth().currentUser.uid
+        })
+        )
+        .catch(function(error){
+        console.log("Error:" + error)
+     });
+  }
+
+    $$("#createAcc").on("click", function() {
        createAcc();
    });
-}
-
-
-
-
-
 
 }
+
+
+
 });    
       
       

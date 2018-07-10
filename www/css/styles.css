@@ -637,4 +637,64 @@ div[class*="col"] {
   height: 100%;
 }
 
+/* bonus page */
 
+.bonusimgs {
+    position: relative;
+    width: 35vw;
+    height: 30vw;
+    border-radius: 20%;
+}
+
+.bonusText {
+  font-size: 8vw;
+      /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 3s infinite; 
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	100%{color: orange;}	
+}
+
+.credits {
+     font-size: 18px;
+      /* Chrome, Safari, Opera */
+  -webkit-animation: arflag 3s infinite; 
+}
+
+@-webkit-keyframes arflag {
+	20%{color: blue;}
+	40%{color: blue;}
+	60%{color: white;}
+	80%{color: white;}
+	100%{color: blue;}	
+}
+#profesor {
+    position: absolute;
+    top: 520px;
+     font-size: 18px;
+     color: white;
+}
+
+#bonusbutton {
+    position: relative;
+     -webkit-animation: arflag 3s infinite; 
+    left: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+    box-shadow: 0 9px #334;
+     background-image: url("../img/the boom.png");
+     background-position: center;
+     background-size: auto;
+}

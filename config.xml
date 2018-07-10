@@ -58,27 +58,6 @@
     </platform>
     <preference name="DisallowOverscroll" value="true" />
     <platform name="android">
-        <access origin="*" />
-        <access origin="https://restcountries.eu/rest/v2/" />
-        <access origin="https://www.patreon.com/bePatron?c=1798557" />
-        <allow-intent href="https://www.patreon.com/bePatron?c=1798557" />
-        <allow-intent href="https://restcountries.eu/rest/v2/" />
-        <allow-intent href="http://*/*" />
-        <allow-intent href="https://*/*" />
-        <allow-intent href="tel:*" />
-        <allow-intent href="sms:*" />
-        <allow-intent href="mailto:*" />
-        <allow-intent href="geo:*" />
-        <allow-intent href="https://restcountries.eu/rest/v2/" />
-        <allow-intent href="https://www.patreon.com/bePatron?c=1798557" />
-        <allow-intent href="market:*" />
-        <allow-navigation href="http://https://www.patreon.com/bePatron?c=1798557/*" />
-        <allow-navigation href="https://https://www.patreon.com/bePatron?c=1798557/*" />
-        <allow-navigation href="data:https://www.patreon.com/bePatron?c=1798557" />
-        <allow-navigation href="http://https://restcountries.eu/rest/v2//*" />
-        <allow-navigation href="https://https://restcountries.eu/rest/v2//*" />
-        <allow-navigation href="data:https://restcountries.eu/rest/v2/" />
-       
     </platform>
     <platform name="ios">
     </platform>
@@ -89,5 +68,6 @@
     </platform>
     <platform name="windows">
     </platform>
+    <plugin name="cordova-plugin-splashscreen" spec="git+https://github.com/apache/cordova-plugin-splashscreen.git" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
 </widget>

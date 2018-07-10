@@ -11,7 +11,7 @@ var myApp = new Framework7();
 /*var paper = paper;*/
 var $ 
 var $$ = $;
- 
+// Required for side-effects
 
 
 
@@ -37,6 +37,7 @@ var email = "";
 var password = "";
 var newEmail;
 var newPassword;
+var token;
  var  url = panelurl;
         $$.getJSON(url, function(request) {
             var comingrequest = request;
@@ -1084,7 +1085,7 @@ myApp.onPageInit('about', function (page) {
 $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
-  if (page.name === 'Page2') {
+  if (page.name === 'Page2') {https://rubikscubeflags-duodecim.c9users.io
    // Following code will be executed for page with data-page attribute equal to "about"
       $$("#flagNamePage2").text(flagName);
       $$("#textdescription").text(flagDescriptionText);
@@ -1112,8 +1113,8 @@ $$(document).on('pageInit', function (e) {
       var errorCode = error.code;
       var errorMessage = error.message;
       alert("Error" + errorMessage);
-    });
-}
+    })
+ }
 
   $$("#SignIn").on("click", function() {
       SignIn();
@@ -1137,28 +1138,32 @@ $$(document).on('pageInit', function (e) {
    
    
    
-  function createAcc () {   
- 
+  function createAcc () { 
         newEmail = $$("#newEmail").val();
         newPassword = $$("#newPassword").val();
+     
         firebase.auth().createUserWithEmailAndPassword(newEmail, newPassword).catch(function(error) {
-          // Handle Errors here.
          var errorCode = error.code;
          var errorMessage = error.message;
-          // ...
-        });
- 
-   $$("#createAcc").on("click", function() {
+          }).then(
+        db.collection("users").add({
+         email: newEmail,
+         uid:  firebase.auth().currentUser.uid
+        })
+        )
+        .catch(function(error){
+        console.log("Error:" + error)
+     });
+  }
+
+    $$("#createAcc").on("click", function() {
        createAcc();
    });
-}
-
-
-
-
-
 
 }
+
+
+
 });    
       
       

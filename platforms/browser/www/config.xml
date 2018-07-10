@@ -9,5 +9,20 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <access origin="https://restcountries.eu/rest/v2/" value="true" />
+    <access origin="https://www.patreon.com/bePatron?c=1798557" value="true" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="https://restcountries.eu/rest/v2/" value="true" />
+    <allow-intent href="https://www.patreon.com/bePatron?c=1798557" value="true" />
+    <allow-navigation href="*" />
+    <allow-navigation href="data:*" />
+    <allow-intent href="*" />
+    <allow-intent href="itms:*" />
+    <allow-intent href="itms-apps:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
     <preference name="DisallowOverscroll" value="true" />
 </widget>
