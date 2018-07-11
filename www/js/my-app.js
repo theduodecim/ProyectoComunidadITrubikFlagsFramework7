@@ -473,7 +473,7 @@ case 6:
                                             console.log("rgbflag2ENG working");
                                             flagName = $$("#flagname").text("Akiruno");
                                             flagDescription = $$("<p>").text(arukinoEn);
-                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Flag_of_Amazonas_State.svg/100px-Flag_of_Amazonas_State.svg.png")
+                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/1/15/Flag_of_Akiruno%2C_Tokyo.svg")
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
