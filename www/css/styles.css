@@ -26,6 +26,8 @@
  background-image: url("../img/rubicksbackground resize 1.png");
   color: black;
 }
+#donation {
+}
 .toolbar {
   background: -webkit-linear-gradient(left, #1e5799 1%,#1e5799 1%,#1e5799 13%,#2989d8 62%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
 }
@@ -641,7 +643,7 @@ div[class*="col"] {
 
 .bonusimgs {
     position: relative;
-    width: 35vw;
+    width: 30vw;
     height: 30vw;
     border-radius: 20%;
 }
@@ -669,6 +671,7 @@ div[class*="col"] {
 
 .credits {
      font-size: 18px;
+     right: 50px;
       /* Chrome, Safari, Opera */
   -webkit-animation: arflag 3s infinite; 
 }
@@ -682,7 +685,7 @@ div[class*="col"] {
 }
 #profesor {
     position: absolute;
-    top: 520px;
+    top: 550px;
      font-size: 18px;
      color: white;
 }
@@ -690,11 +693,11 @@ div[class*="col"] {
 #bonusbutton {
     position: relative;
      -webkit-animation: arflag 3s infinite; 
-    left: 10px;
-    font-size: 30px;
+    left: 20px;
+    font-size: 25px;
     border-radius: 15px;
     box-shadow: 0 9px #334;
-     background-image: url("../img/the boom.png");
+     background-image: url("../img/bonusbuttonimg.jpg");
      background-position: center;
      background-size: auto;
 }

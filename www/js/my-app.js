@@ -725,7 +725,7 @@ case 6:
                                             console.log("Ireland");
                                             flagName = $$("#flagname").text("Ireland");
                                             flagDescription = $$("<p>").text(Ireland);
-                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Flag_of_Cusco.svg/980px-Flag_of_Cusco.svg.png")
+                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Flag_of_Ireland.svg/255px-Flag_of_Ireland.svg.png")
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
@@ -1223,3 +1223,19 @@ $$(document).on('pageInit', '.page[data-page="about"]', function (e) {
     // Following code will be executed for page with data-page attribute equal to "about"
     myApp.alert('Here comes About page');
 })
+
+
+
+
+
+
+  $$(document).on('pageInit', function (e) {
+    // Get page data from event data
+    var page = e.detail.page;
+     if (page.name === 'bonuspage') {
+   // Following code will be executed for page with data-page attribute equal to "about"
+   
+   
+
+}
+});    
