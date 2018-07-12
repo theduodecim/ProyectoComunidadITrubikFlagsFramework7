@@ -1,11 +1,11 @@
 {
   "background_color": "#FFF",
   "display": "standalone",
-  "name": "Rubik",
-  "short_name": "Rubik",
+  "name": "Rubik's Cube Flags",
+  "short_name": "Rubik's Cube Flags",
   "version": "com.Rubik's Cube Flags",
-  "description": "A basic Framework7 template for thinking and wait now.",
-  "author": "Apache Cordova Team",
+  "description": "A project for have learn & have fun",
+  "author": "rubiksflags@gmail.com",
   "icons": [],
   "start_url": "index.html"
 }

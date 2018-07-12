@@ -34,18 +34,21 @@
     <platform name="android">
        <preference name="android-minSdkVersion" value="14" />
         <access origin="*" />
+        <access origin="https://upload.wikimedia.org" value="true" />
         <access origin="https://restcountries.eu/rest/v2/" value="true" />
         <access origin="https://www.patreon.com/bePatron?c=1798557" value="true" />
         <allow-intent href="https://www.patreon.com/bePatron?c=1798557" value="true" />
         <allow-intent href="https://restcountries.eu/rest/v2/" value="true" />
         <allow-intent href="https://restcountries.eu/rest/v2/" />
         <allow-intent href="https://www.patreon.com/bePatron?c=1798557" />
+        <allow-intent href="https://upload.wikimedia.org" value="true"/>
          <allow-intent href="http://*/*" />
         <allow-intent href="https://*/*" />
         <allow-intent href="tel:*" />
         <allow-intent href="mailto:*" />
         <allow-intent href="geo:*" />
         <allow-navigation href="*" />
+        <allow-navigation href="https://upload.wikimedia.org" value="true"/>
         <allow-navigation href="data:*" />
         <allow-intent href="*" />
         <allow-intent href="itms:*" />

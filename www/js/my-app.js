@@ -38,6 +38,11 @@ var password = "";
 var newEmail;
 var newPassword;
 var token;
+var bgimgbuttons1;
+var bgimgbuttons2;
+var bgimgbuttons3;
+
+
  var  url = panelurl;
         $$.getJSON(url, function(request) {
             var comingrequest = request;
@@ -90,14 +95,14 @@ var AzerbaijanEn = "Oficialmente la República de Azerbaiyán es un país en la 
 "Limita con el Mar Caspio al este, Rusia al norte, Georgia al noroeste, Armenia al oeste e Irán al sur. El exclave de Nakhchivan está atado por Armenia al norte y al este, Irán al sur y al oeste, " +
  "y tiene una frontera de 11 km de largo con Turquía en el noroeste.";
  
-var algeriaEn = "Algeria, familary Algerian Arabicrench: Algérie), officially the People's Democratic Republic of Algeria, is a sovereign state in North Africa on the Mediterranean" +
+var argeliaEn = "Algeria, familary Algerian Arabicrench: Algérie), officially the People's Democratic Republic of Algeria, is a sovereign state in North Africa on the Mediterranean" +
  "The capital and most populous city is Algiers, located in the far north of the country. With an area of 2,381,741 square kilometres (919,595 sq mi), Algeria is the tenth-largest" +
   "country in the world, and the largest in Africa since South Sudan became independent from Sudan in 2011. " +
   "Algeria is bordered to the northeast by Tunisia, to the east by Libya, to the west by Morocco, to the southwest by the Western Saharan territory, Mauritania, and Mali, to the southeast by Niger, and to the north by the Mediterrane " +
   "Sea. The country is a semi-presidential" +
   "al republic consisting of 48 provinces and 1,541 communes (counties). Abdelaziz Bouteflika has been President since 1999.";
   
-var algeria = "Argelia​ (en árabe, الجزائر, al-Yazā’ir; en bereber: ⴷⵣⴰⵢⴻⵔ, Dzayer; en francés, Algérie), oficialmente República Argelina Democrática y Popular" +
+var argelia = "Argelia​ * en árabe, al-Yazā’ir; Dzayer; en francés, Algér*, oficialmente República Argelina Democrática y Popular" +
  " es uno de los cincuenta y cuatro países que forman el continente africano. Su capital y ciudad más poblada es Argel. Está ubicado al norte del continente " + 
  "limitando al norte con el mar Mediterráneo, al este con Túnez y Libia, al sur con Níger y Malí, al suroeste con Mauritania y al oeste con el territorio no autónomo de Sahara Occidental y Marruecos. " + 
  "Con 2 381 740 km² es el país más extenso del continente y con 33 333 216 habs. en 2008, el noveno más poblado, por detrás de Nigeria, Egipto, "  +
@@ -168,7 +173,7 @@ var cuzco = "Cuzco (en quechua sureño: Qusqu o Qosqo, pronunciado) es una ciuda
 "Antiguamente fue la capital del Imperio inca, una de las ciudades más importantes del Virreinato del Perú, en cuya época, y en manos de los españoles, se engalanó de iglesias, palacios y plazas barrocas y neoclásicas, que es lo que hoy le convierten en el principal lugar turístico de Perú. Declarada Patrimonio de la Humanidad en 1983 por la Unesco, suele ser denominada, debido a la gran cantidad de monumentos que posee, la *Roma de América*";
 
 var cuscoEn = "Cusco (Spanish: Cuzco, kusko; Quechua: Qusqu or Quechua: Qosqo), often spelled Cuzco, is a city in southeastern Peru, near the Urubamba Valley of the Andes mountain range. It is the capital of the Cusco Region and of the Cusco Province. In 2013, the city had a population of 435,114. Located on the eastern end of the Knot of Cuzco, its elevation is around 3,400 m (11,200 ft)." +
-"The site was the historic capital of the Inca Empire from the 13th until the 16th-century Spanish conquest. In 1983 Cusco was declared a World Heritage Site by UNESCO. It has become a major tourist destination, hosting nearly 2 million visitors a year. The Constitution of Peru designates it as the Historical Capital of Peru.[2] In 1983 Cusco was designated as a World Heritage Site by UNESCO with the title *City of Cuzco*";
+"The site was the historic capital of the Inca Empire from the 13th until the 16th-century Spanish conquest. In 1983 Cusco was declared a World Heritage Site by UNESCO. It has become a major tourist destination, hosting nearly 2 million visitors a year. The Constitution of Peru designates it as the Historical Capital of Peru. In 1983 Cusco was designated as a World Heritage Site by UNESCO with the title *City of Cuzco*";
  
 var IrelandEn = "Ireland is an island in the North Atlantic. It is separated from Great Britain to its east by the North Channel, the Irish Sea, and St George's Channel. Ireland is the third-largest island in Europe." +
 "Politically, Ireland is divided between the Republic of Ireland (officially named Ireland), which covers five-sixths of the island, and Northern Ireland, which is part of the United Kingdom. In 2011, the population of Ireland was about 6.6 million, ranking it the second-most populous island in Europe after Great Britain. Just under 4.8 million live in the Republic of Ireland and just over 1.8 million live in Northern Ireland." +
@@ -181,7 +186,57 @@ var Ireland = "Irlanda  oficialmente la República de Irlanda (en irlandés: Pob
 "pero desde 1999 han cooperado en varias políticas en el marco del Consejo Ministerial Norte-Sur creado por el Acuerdo de Viernes Santo.";
 
 
- 
+var acre = "Acre es uno de los veintiséis estados que, junto con el distrito federal, forman la República Federativa del Brasil. Su capital es Rio Branco. Está ubicado en el noroeste del país, en la Región Norte, limitando al norte con Amazonas, al este con Rondonia, al sureste con Bolivia y al oeste con Perú. Con 795 000 habs. en 2014 es el tercer estado menos poblado —por delante de Amapá y Roraima, " +
+"el menos poblado— y con 4,84 hab/km², el cuarto menos densamente poblado, por delante de Mato Grosso, Amazonas y Roraima, el menos densamente poblado." +
+"Aparte de la capital, sus ciudades más pobladas son: Cruzeiro do Sul, Tarauacá, Sena Madureira y Brasiléia. Una planicie con una altura media de 200 m domina gran parte del Acre. Juruá, Tarauacá, Muru, Embirá y Xapuri son sus ríos más importantes." +
+"Antes de 2008, Acre era el único estado de Brasil que se encontraba íntegramente en el quinto huso horario al Oeste del Meridiano de Greenwich (UTC −5). A partir de 2008, Acre pasó a tener una hora menos con relación a Brasilia (UTC −4); sin embargo, en noviembre de 2010 volvió a su anterior huso horario: UTC −5.1​";
+
+var acreEn = "Acre  *Brazilian Portuguese: akɾi* is a state located in the northern region of Brazil. Located in the westernmost part of the country with a two hours time difference from Brasília, Acre is bordered clockwise by Amazonas to the north and northeast, Rondônia to the east, " +
+"the Bolivian department of Pando to the southeast, and the Peruvian regions of Madre de Dios, Ucayali and Loreto to the south and west. It occupies an area of 152,581.4 km2, being slightly smaller than Tunisia. " +
+"Its capital and largest city is Rio Branco. Other important places include Cruzeiro do Sul, Sena Madureira, Tarauacá and Feijó." +
+"The intense extractive activity, which reached its height in the 20th century, attracted Brazilians from many regions to the state. " +
+"From the mixture of sulista, Southeast Brazil, nordestino, and indigenous traditions arose a diverse cuisine, which unites sun-dried meat (carne-de-sol) with pirarucu," +
+"a typical fish of the region. Such dishes are seasoned with tucupi, a sauce made from manioc. " +
+"Fluvial transport, concentrated on the Juruá and Moa rivers, in the western part of the state, and the Tarauacá and Envira Rivers in the northwest," +
+"is the principal form of circulation, especially between November and June, when the rain leaves the BR-364 impassable, which connects Rio Branco to Cruzeiro do Sul.";
+
+var bolivia =  "Bolivia (quechua: Buliwya; aimara: Wuliwya; guaraní: Volívia), oficialmente Estado Plurinacional de Bolivia,​ es un país soberano situado en la región centro-occidental de América del Sur, " + 
+"políticamente se constituye como un estado plurinacional, descentralizado con autonomías. Está organizado en nueve departamentos. Su capital es Sucre1​, sede del órgano judicial; La Paz es la sede de los órganos ejecutivo, legislativo y electoral, además es el epicentro político, cultural " +
+"y financiero del país. La ciudad más grande y más poblada es Santa Cruz de la Sierra, considerada el motor económico del país. " +
+"Cuenta con una población de cerca de 10,1 millones de habitantes de acuerdo al último censo, del año 2012​ Limita al norte y al oriente con Brasil, al sur con Paraguay y Argentina, y al occidente con Chile y Perú, no tiene salida al mar. " +
+"Su superficie es la sexta más extensa de Iberoamérica y comprende distintos espacios geográficos como la cordillera de los Andes, el Altiplano, la Amazonía, los Llanos de Moxos y el Chaco, siendo uno de los países con mayor biodiversidad en el mundo." +
+"Mantiene una reclamación territorial a Chile por una salida soberana al océano Pacífico. " +
+"En su territorio se desarrollaron civilizaciones antiguas como Tiwanaku, la Cultura Hidráulica de las Lomas y la cultura moxeña. Primero los incas y posteriormente los conquistadores españoles dominaron el territorio hasta que el país se independizó en 1825." +
+"Al haber desarrollado las tradiciones con un mestizaje de las culturas precolombinas con la cultura española, " +
+"es un país multiétnico y pluricultural, rico en la mezcla y sincretismo de costumbres y tradiciones recibidas de los pueblos indígenas y los conquistadores españoles." +
+"Bolivia es un país en vías de desarrollo, por más de una década lidera el crecimiento económico de la región.12​ Es miembro fundador de la Organización de las Naciones Unidas, FMI, OEA, ALBA y la Unasur. Está en proceso de adhesión al Mercosur. Actualmente es situada como uno de los tres países más seguros en América Latina​";
+
+var boliviaEn = "Bolivia  *Guarani: Mborivia boˈɾiʋja; Quechua: Buliwya bʊlɪwja; Aymara: Wuliwya wʊlɪwja*, officially known as the Plurinational State of Bolivia (Spanish: Estado Plurinacional de Bolivia),[9][10] is a landlocked country located in western-central South America. The capital is Sucre while the seat of government is located in La Paz. The largest city and principal economic and financial center is Santa Cruz de la Sierra, " +
+"located on the Llanos Orientales (tropical lowlands) a mostly flat region in the east of Bolivia." +
+"It is constitutionally a unitary state, divided into nine departments. Its geography varies from the peaks of the Andes in the West, to the Eastern Lowlands, situated within the Amazon Basin. It is bordered to the north and east by Brazil, to the southeast by Paraguay, to the south by Argentina, to the southwest by Chile, and to the northwest by Peru. One-third of the country is within the Andean mountain range. With 1,098,581 km2 (424,164 sq mi) of area, Bolivia is the 5th largest country in South America and the 27th largest in the world. " +
+"The country's population, estimated at 11 million, is multiethnic, including Amerindians, Mestizos, Europeans, Asians and Africans. The racial and social segregation that arose from Spanish colonialism has continued to the modern era. Spanish is the official and predominant language, although 36 indigenous languages also have official status, of which the most commonly spoken are Guarani, Aymara and Quechua languages. " +
+"Before Spanish colonization, the Andean region of Bolivia was part of the Inca Empire, while the northern and eastern lowlands were inhabited by independent tribes. Spanish conquistadors arriving from Cuzco and Asunción took control of the region in the 16th century. During the Spanish colonial period Bolivia was administered by the Royal Audiencia of Charcas. Spain built its empire in great part upon the silver that was extracted from Bolivia's mines. After the first call for independence in 1809, 16 years of war followed before the establishment of the Republic," +
+"named for Simón Bolívar. Over the course of the 19th and early 20th century Bolivia lost control of several peripheral territories to neighboring countries including the seizure of its coastline by Chile in 1879. Bolivia remained relatively politically stable until 1971, when Hugo Banzer led a coup d'état which replaced the unstable government of Juan José Torres with a military dictatorship headed by Banzer; Torres was murdered in Buenos Aires, Argentina by a right-wing death squad in 1976." +
+"Banzer's presidency oversaw rapid economic growth which stabilized the country, while his regime cracked down on leftist and socialist opposition and other forms of dissent, resulting in the torture and deaths of a number of Bolivian citizens. Banzer was ousted in 1978 and later returned as the democratically elected president of Bolivia from 1997 to 2001." +
+"Modern Bolivia is a charter member of the UN, IMF, NAM, OAS, ACTO, Bank of the South, ALBA and USAN. For over a decade Bolivia has had one of the fastest economic growths in Latin America, however it remains one of the poorest countries in South America. It is a developing country, with a medium ranking in the Human Development Index, a poverty level of 38.6 percent, and it has one of the lowest crime rates in Latin America." +
+"Its main economic activities include agriculture, forestry, fishing, mining, and manufacturing goods such as textiles, clothing, refined metals, and refined petroleum. Bolivia is very rich in minerals, especially tin.";
+
+var benin = "Benín *en francés: Bénin, antiguamente Dahomey, oficialmente la República de Benín en francés: République du Bénin*, es un país ubicado en el oeste de África. Está limitado por Togo al oeste, por Nigeria al este y por Burkina Faso y Níger al norte. La mayoría de la población vive en el golfo de Benín. La capital de Benín es Porto Novo pero su gobierno está en Cotonú, la ciudad más grande del país. Benín cubre aproximadamente un área de 112.622 kilómetros cuadrados,2​ con una población de aproximadamente 9,05 millones de personas. " +
+"Benín es una nación tropical y subsahariana, dependiente mayoritariamente de la agricultura, con un empleo sustancial, cuyos ingresos provienen, una vez más, de la agricultura." +
+"La lengua oficial de Benín es el francés. Sin embargo, algunas lenguas indígenas como el fon o el yoruba son habladas comúnmente. La religión más extendida es el catolicismo, seguido por cerca del islam, el vudú y el protestantismo. Benín es miembro de las Naciones Unidas, la Unión Africana, la Organización para la Cooperación Islámica, la Zona de Paz y Cooperación del Atlántico Sur, La Francophonie, la Comunidad de Estados Sahel-Saharianos, la Asociación de Productores de Petróleo Africanos, y la Autoridad de la Cuenca del río Níger." +
+"Es una antigua colonia francesa, conocida con el nombre de Dahomey debido a un antiguo reino local, que alcanzó la independencia el 1 de agosto de 1960, como República de Dahomey. En 1975," +
+"se adoptó el nombre actual de República de Benín, tomando el nombre de la Bahía de Benín, en cuya costa está situado el país. A su vez el nombre de la Bahía procede del antiguo reino yoruba de Benín, que se encontraba más al este, en torno de la actual ciudad nigeriana de Benin City, lo que puede llevar a confusión."+ 
+"La razón de haber elegido el nombre de Benín para rebautizar a Dahomey, es que se trataba de un nombre neutral: antes de la colonización francesa, *Dahomey* era solamente el nombre de un reino costero sureño," +
+"y por lo tanto su nombre no representaba a la región de Atakora en el noroeste, ni al antiguo reino (hoy departamento) de Borgou en el noreste.";
+
+var beninEn = "Benin *bɛˈniːn, bɪ-beh-NEEN, bih-; French: Bénin benɛ*, officially the Republic of Benin (French: République du Bénin) and formerly Dahomey, is a country in West Africa. It is bordered by Togo to the west, Nigeria to the east, and Burkina Faso and Niger to the north. The majority of its population lives on the small southern coastline of the Bight of Benin, part of the Gulf of Guinea in the northernmost tropical portion of the Atlantic Ocean." +
+"The capital of Benin is Porto-Novo, but the seat of government is in Cotonou, the country's largest city and economic capital. Benin covers an area of 114,763 square kilometres (44,310 sq mi)[1] and its population in 2016 was estimated to be approximately 10.87 million.[2] Benin is a tropical nation, highly dependent on agriculture, with substantial employment and income arising from subsistence farming." +
+"Official language of Benin is French. However, indigenous languages such as Fon and Yoruba are commonly spoken. The largest religious group in Benin is Roman Catholicism, followed closely by Islam, Vodun and Protestantism. Benin is a member of the United Nations, the African Union, the Organisation of Islamic Cooperation, the South Atlantic Peace and Cooperation Zone, La Francophonie, the Community of Sahel-Saharan States, the African Petroleum Producers Association and the Niger Basin Authority." +
+"From the 17th to the 19th century, the main political entities in the area were the Kingdom of Dahomey, along with the city-state of Porto-Novo, and a large area with many different tribes to the north. This region was referred to as the Slave Coast from as early as the 17th century due to the large number of slaves shipped to the New World during the Trans-Atlantic slave trade. After slavery was abolished, France took over the country and renamed it French Dahomey. In 1960, Dahomey gained full independence from France. " +
+"It has had a tumultuous history since then, with many different democratic governments, military coups, and military governments." +
+"A Marxist–Leninist state called the People's Republic of Benin existed between 1975 and 1990. In 1991, it was replaced by the current multi-party Republic of Benin.";
+
+
 var flagsRgbLenght4Test = ["Akiruno","Amazonas (Venezuela)","Cukarica"];
 var flagsRgb = [
     "Akiruno","Amazonas (Venezuela)","Cukarica","Azerbaijan","Gabia","Bor","Belize",
@@ -197,6 +252,7 @@ var flagsRgoLenghtTest = ["Sri Lanka","Cusco","Ireland"];
 var flagsRgo = [
     "Sri Lanka", "Cusco","Zambia", "Ireland","Zambia"
     ];
+var flagsRgyLenghtTest = ["Acre","Bolivia","Benin"];  
 var flagsRgy = [
     "Acre","Bolivia","Benin","Burkina Faso","Cameroon","Casanare","Congo","Ethiopia","Lithuania","Jagodina",
     "Dominica","Grenada","Mauritania"
@@ -298,7 +354,7 @@ $$(document).on('deviceready', function() {
       if(ENG == true) {
     $$("#clean").text("Some time to explore" + "\n" + "you need to clean" +"\n" + "your cubes" + "\n" + "pressing the star" + "\n" + "Botton above");      
      $$("#tutorialQuote").text("It's time to explore the world with Rubik's Cube Flags");
-     $$("#tutorialInstruction").text("First Press the Cube and Get the your colors of the day!." + "\n" + "Seccond, Now you got the colors press the Explore" + "to know more about your new Flag!");
+     $$("#tutorialInstruction").text("First Press the Cube and Get the your RubiksFlags of the day!." + "\n" + "Seccond, press the Explore" + "to know more about your new Flag and if you want try to create that flag in your Rubick Cube!");
      $$("#leftpanelnews").text("News");
      $$("#leftpanelquote").text("Which place of the world you are going visit today?");
      $$("#leftpanelinformation").text("If you donate 1 US$ or more," +
@@ -363,7 +419,7 @@ $$("#donation").on("click", function() {
     
     
     function randomConvinationFunction() {
-    var randomConvination = Math.floor((Math.random() * 3) + 1)
+    var randomConvination = Math.floor((Math.random() * 4) + 1)
      console.log(randomConvination)
     return randomConvination;
 }
@@ -424,15 +480,18 @@ case 6:
                                             .css("width", "145px")
                                             .css("border-style", "inset");
                                             flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
+                                            .attr("class","pb-standalone-dark")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://c1.staticflickr.com/8/7390/13911014358_66b30a21b5_b.jpg)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
+                                             .attr("class","pb-standalone-dark")
                                             .attr("id","flagbutton2")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/d/d2/Coat_of_arms_of_Amazonas_State.jpg)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
+                                            .attr("class","pb-standalone-dark")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://c1.staticflickr.com/3/2934/14018106379_9f63523889_z.jpg)");
                                             console.log(flagDescription);
@@ -457,15 +516,15 @@ case 6:
                                             .css("width", "145px")
                                             .css("border-style", "inset");
                                             flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/9/9a/Otsu%2C_Akiruno%2C_Tokyo_190-0174%2C_Japan_-_panoramio_%282%29.jpg)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton2")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Hirasawa%2C_Akiruno%2C_Tokyo_197-0812%2C_Japan_-_panoramio.jpg/800px-Hirasawa%2C_Akiruno%2C_Tokyo_197-0812%2C_Japan_-_panoramio.jpg)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Deep_Bowl_from_Ushinuma%2C_Akiruno-shi%2C_Tokyo%2C_Jomon_period%2C_3000-2000_BC_-_Tokyo_National_Museum_-_DSC05623.JPG/400px-Deep_Bowl_from_Ushinuma%2C_Akiruno-shi%2C_Tokyo%2C_Jomon_period%2C_3000-2000_BC_-_Tokyo_National_Museum_-_DSC05623.JPG)");
                                             console.log(flagDescription);
@@ -482,7 +541,7 @@ case 6:
                                         break; 
                                          case 3:
                                             console.log("rgbflag3");
-                                            console.log("Curika");
+                                            console.log("Cukarica");
                                             flagName = $$("#flagname").text("Cukarica");
                                             flagDescription = $$("<p>").text(cukarica);
                                             flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/COA_Cukarica.png/100px-COA_Cukarica.png")
@@ -490,15 +549,15 @@ case 6:
                                             .css("width", "145px")
                                             .css("border-style", "inset");
                                             flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/e/ef/Cukarica_coa.jpg)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton2")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Sv_Petka_Padina.jpg/600px-Sv_Petka_Padina.jpg)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/a/a1/Zlatibor-vazdu%C5%A1na_banja_006.jpg)");
                                             console.log(flagDescription);
@@ -507,10 +566,6 @@ case 6:
                                             console.log("rgbflag3");
                                             flagName = $$("#flagname").text("Cukarica");
                                             flagDescription = $$("<p>").text(cukaricaEn);
-                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/COA_Cukarica.png/100px-COA_Cukarica.png")
-                                            .css("height", "70px")
-                                            .css("width", "145px")
-                                            .css("border-style", "inset");
                                             console.log(flagDescription);
                                             }
                                           break; 
@@ -545,15 +600,15 @@ case 6:
                                             .css("border-style", "inset");
                                             console.log(flagDescription);
                                              flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://s.iha.com/1799100025806/bb-Zebbug-Vecchio-Mulino-B-B_25.jpeg)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton2")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Malta_-_Zebbug_-_Triq_Sciortino_-_Dun_Karm_Psaila_02_ies.jpg/400px-Malta_-_Zebbug_-_Triq_Sciortino_-_Dun_Karm_Psaila_02_ies.jpg)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Malta_-_Zebbug_-_Vjal_il-Helsien_01_ies.jpg/800px-Malta_-_Zebbug_-_Vjal_il-Helsien_01_ies.jpg)");
                                             console.log(flagDescription);
@@ -581,15 +636,15 @@ case 6:
                                             .css("width", "145px")
                                             .css("border-style", "inset");
                                              flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Escudo_de_Puerto_Boyac%C3%A1.svg/626px-Escudo_de_Puerto_Boyac%C3%A1.svg.png)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton2")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Parque_Corrales_Boyac%C3%A1.JPG/800px-Parque_Corrales_Boyac%C3%A1.JPG)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://c1.staticflickr.com/6/5594/14382012619_dff918fba1_b.jpg)");
                                             console.log(flagDescription);
@@ -607,30 +662,30 @@ case 6:
                                          case 3:
                                             console.log("rgwflag3");
                                             console.log("algeria");
-                                            flagName = $$("#flagname").text("algeria");
-                                            flagDescription = $$("<p>").text(algeria);
+                                            flagName = $$("#flagname").text("Argelia");
+                                            flagDescription = $$("<p>").text(argelia);
                                             flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/900px-Flag_of_Algeria.svg.png")
                                             .css("height", "70px")
                                             .css("width", "145px")
                                             .css("border-style", "inset");
                                             flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/f/fc/Elephnat_Illizi_Algeria.jpg)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton2")
-                                            .css("background-image", "url(https://cdn.pixabay.com/photo/2017/09/28/17/00/algeria-2796203_960_720.jpg)");
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/8/81/Les_gorges%2C_Constantine%2C_Algeria-1.jpg)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://c1.staticflickr.com/6/5594/14382012619_dff918fba1_b.jpg)");
                                             
                                             console.log(flagDescription);
                                             if(ENG == true) {
                                             console.log("rgbflag1");
-                                            flagName = $$("#flagname").text("Cukarica");
-                                            flagDescription = $$("<p>").text(cukaricaEn);
+                                            flagName = $$("#flagname").text("Argelia");
+                                            flagDescription = $$("<p>").text(argeliaEn);
                                             flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Flag_of_Algeria.svg/900px-Flag_of_Algeria.svg.png")
                                             .css("height", "70px")
                                             .css("width", "145px")
@@ -669,15 +724,15 @@ case 6:
                                             .css("border-style", "inset");
                                             console.log(flagDescription);
                                              flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSC1DSznaYpQicGD3YdBMD2jW0pDwP16t6Jr7_WJnPYacptCVPGSA)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton2")
                                             .css("background-image", "url(https://www.goodfreephotos.com/albums/sri-lanka/buddha-statue-on-rocks-in-sri-lanka.jpg)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://c.pxhere.com/photos/b8/3e/elephants_sri_lanka_travel_wildlife_ceylon_outdoor_tourism-1376903.jpg!d)");
                                             console.log(flagDescription);
@@ -700,15 +755,15 @@ case 6:
                                             .css("border-style", "inset");
                                             console.log(flagDescription);
                                              flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Sacsayhuam%C3%A1n%2C_Cusco%2C_Per%C3%BA%2C_2015-07-31%2C_DD_24.JPG/800px-Sacsayhuam%C3%A1n%2C_Cusco%2C_Per%C3%BA%2C_2015-07-31%2C_DD_24.JPG)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton2")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Cusco-coricancha-c01.jpg/399px-Cusco-coricancha-c01.jpg)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/1/13/Chicharr%C3%B3n_Cusco_10062011.jpg)");
                                             console.log(flagDescription);
@@ -731,15 +786,15 @@ case 6:
                                             .css("border-style", "inset");
                                             console.log(flagDescription);
                                              flagImgcircle1 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton1")
                                             .css("background-image", "url(https://c.pxhere.com/photos/d9/5b/klee_shamrocks_luck_nature_lucky_charm_plant_meadow_lucky_clover-1075830.jpg!d)");
                                              flagImgcircle2 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton2")
                                             .css("background-image", "url(https://www.myirelandtour.com/images/photos/hi-res/mayo/inishturk-island/currach-fishing-boat-1.jpg)");
                                              flagImgcircle3 = $$("<input>")
-                                            .attr("type2","button")
+                                            .attr("type","button")
                                             .attr("id","flagbutton3")
                                             .css("background-image", "url(https://www.publicdomainpictures.net/pictures/260000/velka/pub-in-dublin-ireland-1527331814tZT.jpg)");
                                             console.log(flagDescription);
@@ -756,7 +811,124 @@ case 6:
                                         
                                      }
                                 };
-        break;                            
+                  break;
+     case 4:
+             console.log("RGY working");
+                    $$("#flagbutton1").css(
+                        "background-color", "red");
+                         $$("#flagbutton2").css(
+                         "background-color", "green")
+                         $$("#flagbutton3").css(
+                         "background-color", "Yellow")
+                     function randomrgbFlagFunction() {
+                                   var randomConvination = Math.floor((Math.random() * 3) + 1) 
+                                   console.log("random RGYflagWorking");
+                                   return randomConvination;
+                                }
+                                
+                                if(randomrgbFlagFunction() != null) {
+                                     switch(randomrgbFlagFunction()) {
+                                        case 1:
+                                            console.log("rgyflag1");
+                                            console.log("Acre");
+                                            flagName = $$("#flagname").text("Acre");
+                                            flagDescription = $$("<p>").text(acre);
+                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/100px-Bandeira_do_Acre.svg.png")
+                                            .css("height", "70px")
+                                            .css("width", "145px")
+                                            .css("border-style", "inset");
+                                            console.log(flagDescription);
+                                             flagImgcircle1 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_map_of_Acre.png)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/0/04/Callicebus_cupreus_registrado_no_Seringal_Cachoeira%2C_Xapuri-Acre-Brasil.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Aldeia_Caxinau%C3%A1_no_Acre.jpg/800px-Aldeia_Caxinau%C3%A1_no_Acre.jpg)");
+                                            console.log(flagDescription);
+                                            
+                                            if(ENG == true) {
+                                            console.log("rgoflag1");
+                                            flagName = $$("#flagname").text("Acre");
+                                            flagDescription = $$("<p>").text(acreEn);
+                                            console.log(flagDescription);
+                                            }
+                                       break;
+                                       case 2:
+                                            console.log("rgoflag2");
+                                            console.log("Bolivia");
+                                            flagName = $$("#flagname").text("Bolivia");
+                                            flagDescription = $$("<p>").text(bolivia);
+                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Flag_of_Bolivia_%28state%29.svg/125px-Flag_of_Bolivia_%28state%29.svg.png")
+                                            .css("height", "70px")
+                                            .css("width", "145px")
+                                            .css("border-style", "inset");
+                                            console.log(flagDescription);
+                                             flagImgcircle1 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/3/33/Llama_en_la_laguna_Colorada_Potos%C3%AD_Bolivia.jpg)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Valle_de_la_Luna_-_La_Paz_-_Bolivia.jpg/800px-Valle_de_la_Luna_-_La_Paz_-_Bolivia.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/c/c4/Laguna_Verde%2C_Bolivia_%282045654244%29.jpg)");
+                                            console.log(flagDescription);
+                                            
+                                            if(ENG == true) {
+                                            console.log("rgoflag1");
+                                            flagName = $$("#flagname").text("Cusco");
+                                            flagDescription = $$("<p>").text(boliviaEn);
+                                            console.log(flagDescription);
+                                            }
+                                       break;
+                                         case 3:
+                                            console.log("rgyflag3");
+                                            console.log("Benin");
+                                            flagName = $$("#flagname").text("Benin");
+                                            flagDescription = $$("<p>").text(benin);
+                                            flagImage = $$("<img>").attr("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Flag_of_Benin.svg/125px-Flag_of_Benin.svg.png")
+                                            .css("height", "70px")
+                                            .css("width", "145px")
+                                            .css("border-style", "inset");
+                                            console.log(flagDescription);
+                                             flagImgcircle1 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton1")
+                                            .css("background-image", "url(http://www.pan-uk.org/site/wp-content/uploads/Benin-cotton-farmer-family.jpg)");
+                                             flagImgcircle2 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton2")
+                                            .css("background-image", "url(http://isthatplacesafe.com/wp-content/uploads/2018/05/benin-travel-safety-guide.jpg)");
+                                             flagImgcircle3 = $$("<input>")
+                                            .attr("type","button")
+                                            .attr("id","flagbutton3")
+                                            .css("background-image", "url(https://upload.wikimedia.org/wikipedia/commons/a/a2/Cabeza_de_personaje._Antiguo_Reino_de_Ben%C3%ADn.jpg)");
+                                            console.log(flagDescription);
+                                            
+                                            if(ENG == true) {
+                                            console.log("rgoflag1");
+                                            flagName = $$("#flagname").text("Ireland");
+                                            flagDescription = $$("<p>").text(beninEn);
+                                            console.log(flagDescription);
+                                            }
+                                       break;
+                                        
+                                        
+                                     }
+                                };
+        break;
+        
+        
+        
     };
     
     
@@ -857,7 +1029,13 @@ case 6:
    
   backgroundAnimate(); 
     
-  })
+    
+bgimgbuttons1 = $$(flagImgcircle1).css('background-image').slice(4, -1).replace(/"/g, "");
+bgimgbuttons2 = $$(flagImgcircle2).css('background-image').slice(4, -1).replace(/"/g, "");
+bgimgbuttons3 = $$(flagImgcircle3).css('background-image').slice(4, -1).replace(/"/g, "");
+    
+    
+  });
   /* if(flagName == null) {*/
       /* <button class="checkFlag" id="checkflagbutton"><a id="checkflagText" align="center" href="page2.html" >Explore <p id="flagname"></p> </a></button><br>*/
     /*var exploreButton =  $$('<a style="background-color: red" id="checkflagText" align="center" href="page2.html">Explore</a>');
@@ -1068,7 +1246,8 @@ $$("#FunnyBackgroundrecover").on("click", function() {
    backgroundAnimate();
        
    }); 
-    
+   
+   
 
 
 });
@@ -1085,14 +1264,68 @@ myApp.onPageInit('about', function (page) {
 $$(document).on('pageInit', function (e) {
     // Get page data from event data
     var page = e.detail.page;
-  if (page.name === 'Page2') {https://rubikscubeflags-duodecim.c9users.io
-   // Following code will be executed for page with data-page attribute equal to "about"
+  if (page.name === 'Page2') {
+   // Following code will be executed for page with data-page attribute equal to "about" https://rubikscubeflags-duodecim.c9users.io
       $$("#flagNamePage2").text(flagName);
       $$("#textdescription").text(flagDescriptionText);
       $$(flagImage).appendTo("#flagimg2");
       $$(flagImgcircle1).appendTo(".flagsColorspage2");
       $$(flagImgcircle2).appendTo(".flagsColorspage2");
       $$(flagImgcircle3).appendTo(".flagsColorspage2");
+   
+
+function showurl1() {
+  var backgroundurl1 =  bgimgbuttons1;
+  backgroundurl1.toString(); // may be no needed but now is fixed
+ 
+ var myPhotoBrowserDark1 = myApp.photoBrowser({
+     photos : [
+       backgroundurl1
+    ],
+    theme: 'dark'
+});
+  myPhotoBrowserDark1.open();
+}
+
+$$('#flagbutton1').on('click', function () {
+   showurl1();
+});
+
+function showurl2() {
+  var backgroundurl2 =  bgimgbuttons2;
+  backgroundurl2.toString();
+ 
+ var myPhotoBrowserDark1 = myApp.photoBrowser({
+     photos : [
+       backgroundurl2
+    ],
+    theme: 'dark'
+});
+  myPhotoBrowserDark1.open();
+}
+
+$$('#flagbutton2').on('click', function () {
+   showurl2();
+});
+
+function showurl3() {
+  var backgroundurl3 =  bgimgbuttons3;
+  backgroundurl3.toString();
+ 
+ var myPhotoBrowserDark1 = myApp.photoBrowser({
+     photos : [
+       backgroundurl3
+    ],
+    theme: 'dark'
+});
+  myPhotoBrowserDark1.open();
+}
+
+$$('#flagbutton3').on('click', function () {
+   showurl3();
+});
+
+   
     }
     
 })

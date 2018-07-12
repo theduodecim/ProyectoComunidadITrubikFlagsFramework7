@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.Rubik's Cube Flags" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>Rubik</name>
+    <name>Rubik's Cube Flags</name>
     <description>
-        A basic Framework7 template for thinking and wait now.
+       A project for have learn &amp; have fun
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="rubiksflags@gmail.com" href="http://cordova.io">
+         rubiksflags@gmail.com
     </author>
     <content src="index.html" />
     <access origin="*" />
@@ -14,6 +14,8 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
     <allow-intent href="https://restcountries.eu/rest/v2/" value="true" />
     <allow-intent href="https://www.patreon.com/bePatron?c=1798557" value="true" />
     <allow-navigation href="*" />
@@ -21,8 +23,6 @@
     <allow-intent href="*" />
     <allow-intent href="itms:*" />
     <allow-intent href="itms-apps:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
     <allow-intent href="market:*" />
     <preference name="DisallowOverscroll" value="true" />
 </widget>
